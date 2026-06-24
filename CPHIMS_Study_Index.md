@@ -38,12 +38,24 @@ Note: the current HIMSS webpage states **115 total questions / 100 scored**, whi
 
 | File | Contents |
 |---|---|
-| `Domain1_Healthcare_Technology_Environments.md` | Healthcare environment, technology environment, original exam-style questions, cheatsheet |
-| `Domain2_Clinical_Informatics.md` | Clinical vocabulary, metrics, analytics, CDS, original exam-style questions, cheatsheet |
-| `Domain3_HIS_Management.md` | Analysis, design, implementation, testing, privacy/security, original exam-style questions, cheatsheet |
-| `Domain4_Management_Leadership.md` | Strategy, governance, HR, vendors, budget, original exam-style questions, cheatsheet |
+| `Domain1_Healthcare_Technology_Environments.md` | Healthcare environment, technology environment, concept questions, cheatsheet |
+| `Domain2_Clinical_Informatics.md` | Clinical vocabulary, metrics, analytics, CDS, concept questions, cheatsheet |
+| `Domain3_HIS_Management.md` | Analysis, design, implementation, testing, privacy/security, concept questions, cheatsheet |
+| `Domain4_Management_Leadership.md` | Strategy, governance, HR, vendors, budget, concept questions, cheatsheet |
 | `CPHIMS_Master_Cheatsheet.md` | All acronyms, coding standards, frameworks, formulas |
 | `CPHIMS_Flashcards.md` | 132 Q&A cards for exam logistics and all domains (Anki-friendly format) |
+
+## Real-World Practice Question Files (Per-Domain)
+
+Comprehensive scenario-based question banks — answer first, then review rationale.
+
+| File | Questions | Domain Weight |
+|---|---|---|
+| `RW_Domain1_Healthcare_Technology_Environments.md` | 69 questions — Tasks 1.A.1–1.B.2 | 25% (~25 scored) |
+| `RW_Domain2_Clinical_Informatics.md` | 68 questions — Tasks 2.1–2.6 | 20% (~20 scored) |
+| `RW_Domain3_HIS_Management.md` | 90 questions — Tasks 3.A.1–3.E.7 + Systems Lifecycle + Technical Change Mgmt | 30% (~30 scored) |
+| `RW_Domain4_Management_Leadership.md` | 85 questions — Tasks 4.1–4.25 + Organizational Change Management (Kotter, ADKAR) | 25% (~25 scored) |
+| **Total** | **312 questions across all 4 domains** | |
 
 ## 9-Topic Study Schedule
 
