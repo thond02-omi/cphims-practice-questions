@@ -168,6 +168,51 @@ window.THEORY_D4 = `
 - <strong>Show-back model</strong> → IT costs reported to business units without direct charge (transparency)</p>
 <hr />
 <h2>Domain 4 — Quick Cheatsheet</h2>
+<hr />
+<h2>Leadership Theories and IT Governance</h2>
+<hr />
+<h3>Leadership Styles</h3>
+<table>
+<thead><tr><th>Theory</th><th>Key Concept</th><th>Healthcare HIT Application</th></tr></thead>
+<tbody>
+<tr><td><strong>Transformational</strong></td><td>Inspires through vision and meaning; creates lasting change via intrinsic motivation</td><td>CIO articulates compelling EHR adoption vision aligned to patient care mission</td></tr>
+<tr><td><strong>Transactional</strong></td><td>Manages through reward and punishment tied to defined performance expectations</td><td>Performance reviews with bonuses tied to SLA metrics; disciplinary action for policy violations</td></tr>
+<tr><td><strong>Servant leadership</strong></td><td>Leader serves followers; removes obstacles; enables team success first</td><td>HIT director who focuses on clearing barriers for implementation team</td></tr>
+<tr><td><strong>Situational (Hersey-Blanchard)</strong></td><td>Adapts leadership style to match the development level of each follower</td><td>High-directive style for new analyst; delegating style for senior informaticist</td></tr>
+</tbody>
+</table>
+<h3>Situational Leadership — Four Development Levels and Matching Styles</h3>
+<table>
+<thead><tr><th>Follower Level</th><th>Characteristics</th><th>Appropriate Leader Style</th></tr></thead>
+<tbody>
+<tr><td><strong>D1 — Enthusiastic Beginner</strong></td><td>Low competence, high commitment</td><td><strong>S1 — Directing:</strong> tell what/how/when; high task direction, low relationship support</td></tr>
+<tr><td><strong>D2 — Disillusioned Learner</strong></td><td>Growing competence, reduced commitment</td><td><strong>S2 — Coaching:</strong> explain why + how; high task AND high relationship support</td></tr>
+<tr><td><strong>D3 — Capable but Cautious</strong></td><td>High competence, variable confidence</td><td><strong>S3 — Supporting:</strong> listen and encourage; low task direction, high relationship support</td></tr>
+<tr><td><strong>D4 — Self-Reliant Achiever</strong></td><td>High competence, high commitment</td><td><strong>S4 — Delegating:</strong> hand off responsibility; low task direction, low relationship support</td></tr>
+</tbody>
+</table>
+<p><em>Exam tip:</em> Situational leadership matches style to the FOLLOWER's development level — not to task difficulty. If Desire (ADKAR) is low, apply coaching (S2) before training.</p>
+<h3>IT Governance Frameworks</h3>
+<table>
+<thead><tr><th>Framework</th><th>Focus</th><th>Key Concept for CPHIMS</th></tr></thead>
+<tbody>
+<tr><td><strong>COBIT</strong></td><td>IT governance and management aligned to business objectives</td><td>Separates governance (board/executives) from management (IT operations); covers the enterprise end-to-end</td></tr>
+<tr><td><strong>ITIL</strong></td><td>IT service management delivery and support lifecycle</td><td>Service strategy → design → transition → operation → continual improvement</td></tr>
+<tr><td><strong>ISO/IEC 27001</strong></td><td>Information security management system (ISMS)</td><td>International standard for risk-based, systematic information security management</td></tr>
+</tbody>
+</table>
+<h3>Healthcare IT Governance Committee Structure</h3>
+<table>
+<thead><tr><th>Committee</th><th>Purpose</th><th>Typical Members</th></tr></thead>
+<tbody>
+<tr><td><strong>IT Steering Committee</strong></td><td>Strategic IT investment decisions; portfolio prioritization</td><td>CIO, CFO, CMO, CNO, COO, department heads</td></tr>
+<tr><td><strong>Clinical Informatics Committee</strong></td><td>Clinical HIT decisions; CDS governance; EHR workflow standards</td><td>CMIO, CNIO, physician champions, nursing informatics, pharmacy, IT</td></tr>
+<tr><td><strong>Data Governance Council</strong></td><td>Data standards; quality; ownership; stewardship policies</td><td>CIO, CDO, data stewards, compliance, legal</td></tr>
+<tr><td><strong>Change Advisory Board (CAB)</strong></td><td>Technical change review and approval</td><td>IT leadership, application owners, security, operations</td></tr>
+<tr><td><strong>Privacy/Security Committee</strong></td><td>Privacy/security policy; breach response; risk management oversight</td><td>CISO, Privacy Officer, Compliance Officer, Legal</td></tr>
+</tbody>
+</table>
+<hr />
 <pre><code>STRATEGIC PLANNING:
 Balanced Scorecard → Financial, Customer, Internal Process, Learning &amp; Growth
 SWOT → Strengths, Weaknesses, Opportunities, Threats
@@ -229,5 +274,27 @@ RACI → Responsible, Accountable, Consulted, Informed
 Job description → title, responsibilities, competencies, qualifications
 360° feedback → peer review for competency assessment
 Succession planning → develop high-potential future leaders
+
+LEADERSHIP THEORIES:
+Transformational → vision + inspiration → intrinsic motivation + lasting change
+Transactional    → reward/punishment tied to performance expectations
+Servant          → leader removes obstacles; team success comes first
+Situational (Hersey-Blanchard) → match style to follower's DEVELOPMENT LEVEL:
+  D1 (low comp/high commit)  → S1 Directing (tell what/how/when)
+  D2 (some comp/low commit)  → S2 Coaching (direct + support)
+  D3 (high comp/low commit)  → S3 Supporting (encourage + listen)
+  D4 (high comp/high commit) → S4 Delegating (trust + empower)
+
+IT GOVERNANCE FRAMEWORKS:
+COBIT     → IT governance aligned to business; separates governance from management
+ITIL      → IT service management framework (strategy→design→transition→ops→improvement)
+ISO 27001 → international ISMS standard; risk-based information security
+
+GOVERNANCE COMMITTEES:
+IT Steering Committee  → strategic IT investments; portfolio prioritization (CIO, CFO, CMO)
+Clinical Informatics   → CDS governance; EHR workflow standards (CMIO, CNIO led)
+Data Governance Council → data standards; ownership; quality; stewardship
+CAB                    → technical change review and approval
+Privacy/Security Cmte  → breach response; security policy; compliance oversight
 </code></pre></div>
 `;

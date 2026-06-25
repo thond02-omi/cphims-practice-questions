@@ -377,6 +377,45 @@ Names · Dates (except year) · Phone · Fax · Email · SSN · MRN · Health pl
 
 ---
 
+### Task B.2 Extension — Cybersecurity Threats and Incident Response
+
+#### Cybersecurity Threat Taxonomy
+
+| Threat | Description | Primary Defense |
+|---|---|---|
+| **Ransomware** | Malware encrypts files; attacker demands payment for decryption key | Offline backups; endpoint protection; patch management; user training |
+| **Phishing** | Deceptive email or message to steal credentials or install malware | Security awareness training; MFA; email filtering |
+| **Spear phishing** | Targeted phishing using personalized details; higher success rate | Same as phishing; harder to auto-block |
+| **Social engineering** | Manipulating people to bypass security controls (not systems) | Security culture; verification callbacks; least privilege |
+| **Insider threat** | Authorized user misuses access — malicious or negligent | RBAC; audit logging; user activity monitoring; access recertification |
+| **Man-in-the-Middle (MitM)** | Attacker intercepts communication between two parties | TLS/SSL encryption; VPN; certificate validation |
+| **Supply chain attack** | Compromises a trusted vendor or software to reach downstream organizations | Vendor risk management; software integrity verification |
+
+#### NIST Cybersecurity Framework (CSF) — Five Core Functions
+
+| Function | Key Activities |
+|---|---|
+| **Identify** | Asset inventory; risk assessment; governance; data classification |
+| **Protect** | Access controls; encryption; patching; security awareness training; BAA execution |
+| **Detect** | SIEM; audit log review; vulnerability scanning; IDS/IPS monitoring |
+| **Respond** | Incident response plan activation; containment; forensics; breach notification |
+| **Recover** | BCP/DRP activation; clean backup restoration; post-incident review; policy update |
+
+#### Incident Response Lifecycle (NIST SP 800-61)
+
+1. **Preparation** — policies, tools, and response team established BEFORE any incident
+2. **Detection & Analysis** — SIEM alerts or user reports; determine scope and severity
+3. **Containment** — isolate affected systems; prevent lateral spread (network segmentation)
+4. **Eradication** — remove malware; patch exploited vulnerability; clean systems
+5. **Recovery** — restore from verified clean backup; validate integrity before returning to production
+6. **Post-Incident Review** — lessons learned; update policies, controls, and training
+
+> **Critical sequence:** Containment → Eradication → Recovery. Never restore before eradicating — systems will immediately reinfect.
+
+> **Ransomware:** Isolate → assess backup viability → eradicate → restore from clean backup → post-incident review. Paying ransom does not guarantee decryption.
+
+---
+
 ## Domain 1 — Quick Reference Cheatsheet
 
 ```

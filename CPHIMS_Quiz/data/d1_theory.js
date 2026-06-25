@@ -635,6 +635,45 @@ window.THEORY_D1 = `
 </tbody>
 </table>
 <h2>Domain 1 — Quick Cheatsheet</h2>
+<hr />
+<h2>Cybersecurity Threats and Incident Response</h2>
+<hr />
+<h3>Cybersecurity Threat Taxonomy</h3>
+<table>
+<thead><tr><th>Threat</th><th>Description</th><th>Primary Defense</th></tr></thead>
+<tbody>
+<tr><td><strong>Ransomware</strong></td><td>Malware encrypts files; attacker demands payment for decryption key</td><td>Offline backups; endpoint protection; patch management; user training</td></tr>
+<tr><td><strong>Phishing</strong></td><td>Deceptive email or message designed to steal credentials or install malware</td><td>Security awareness training; MFA; email filtering</td></tr>
+<tr><td><strong>Spear phishing</strong></td><td>Targeted phishing using personalized details; higher success rate</td><td>Same as phishing; harder to block automatically</td></tr>
+<tr><td><strong>Social engineering</strong></td><td>Manipulating people to bypass security controls</td><td>Security culture; verification callbacks; least privilege</td></tr>
+<tr><td><strong>Insider threat</strong></td><td>Authorized user misuses access — malicious or negligent</td><td>RBAC; audit logging; user activity monitoring; access recertification</td></tr>
+<tr><td><strong>Man-in-the-Middle (MitM)</strong></td><td>Attacker intercepts data in transit between two parties</td><td>TLS/SSL encryption; VPN; certificate validation</td></tr>
+<tr><td><strong>Supply chain attack</strong></td><td>Compromises a trusted vendor or software to reach downstream organizations</td><td>Vendor risk management; software integrity verification</td></tr>
+</tbody>
+</table>
+<h3>NIST Cybersecurity Framework (CSF) — Five Core Functions</h3>
+<table>
+<thead><tr><th>Function</th><th>Key Activities</th></tr></thead>
+<tbody>
+<tr><td><strong>Identify</strong></td><td>Asset inventory; risk assessment; governance; data classification</td></tr>
+<tr><td><strong>Protect</strong></td><td>Access controls; encryption; patching; security awareness training; BAA execution</td></tr>
+<tr><td><strong>Detect</strong></td><td>SIEM; audit log review; vulnerability scanning; IDS/IPS monitoring</td></tr>
+<tr><td><strong>Respond</strong></td><td>Incident response plan activation; containment; forensics; breach notification</td></tr>
+<tr><td><strong>Recover</strong></td><td>BCP/DRP activation; clean backup restoration; post-incident review; policy update</td></tr>
+</tbody>
+</table>
+<h3>Incident Response Lifecycle (NIST SP 800-61)</h3>
+<ol>
+<li><strong>Preparation</strong> — policies, tools, and response team established BEFORE any incident occurs</li>
+<li><strong>Detection &amp; Analysis</strong> — SIEM alerts or user reports; determine scope and severity</li>
+<li><strong>Containment</strong> — isolate affected systems; prevent lateral spread (network segmentation)</li>
+<li><strong>Eradication</strong> — remove malware; patch exploited vulnerability; clean systems</li>
+<li><strong>Recovery</strong> — restore from verified clean backup; validate integrity before returning to production</li>
+<li><strong>Post-Incident Review</strong> — lessons learned; update policies, controls, and training</li>
+</ol>
+<p><em>Critical exam sequence:</em> <strong>Containment → Eradication → Recovery</strong>. Never restore systems before eradicating the threat — they will immediately reinfect.</p>
+<p><em>Ransomware:</em> Isolate → assess backup viability → eradicate → restore from clean backup → post-incident review. Paying ransom does NOT guarantee decryption.</p>
+<hr />
 <pre><code>ORGANIZATION TYPES:
 Acute care      → inpatient, 24/7, emergency/surgical
 Ambulatory      → outpatient, no overnight stay
@@ -700,5 +739,18 @@ FRAMEWORKS:
 Triple Aim    → experience + population health + cost
 Quadruple Aim → + clinician well-being
 SDOH          → social determinants of health
+
+CYBERSECURITY THREATS:
+Ransomware    → encrypts files; restore from clean backup; do NOT pay ransom (no guarantee)
+Phishing      → deceptive email; defense: MFA + training + email filtering
+Spear phish   → personalized phishing; harder to auto-block
+Social eng.   → human manipulation; defense: security culture + verification callbacks
+Insider threat → authorized user misuse; defense: RBAC + audit logs + access recertification
+MitM          → intercept data in transit; defense: TLS/SSL + VPN
+Supply chain  → vendor compromise → downstream orgs affected; vendor risk management
+
+NIST CSF:     Identify → Protect → Detect → Respond → Recover
+IR LIFECYCLE: Preparation → Detection → Containment → Eradication → Recovery → Post-Review
+KEY SEQUENCE: Containment BEFORE Eradication BEFORE Recovery (critical exam order)
 </code></pre></div>
 `;

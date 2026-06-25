@@ -314,6 +314,39 @@
 
 ---
 
+### Task A.2 Extension — CDI, Nursing Informatics, and Clinical Registries
+
+#### Clinical Documentation Improvement (CDI)
+
+- **CDI program** → ensures clinical documentation accurately reflects patient condition, complexity, and resource utilization — directly drives DRG assignment and reimbursement accuracy
+- **CDI specialists** → review records concurrently and query physicians for clarification of diagnosis specificity and linkage (e.g., "CHF" → "acute-on-chronic systolic heart failure, NYHA Class III")
+- **Query types:** concurrent (during hospitalization — allows real-time correction) or retrospective (after discharge)
+- **Computer-Assisted Coding (CAC)** → NLP-based software proposes ICD-10-CM/PCS and CPT codes from clinical text for coder review and validation; increases coding speed and consistency
+- **Impact:** Higher documentation specificity → more accurate DRG → appropriate reimbursement. Underdocumentation = lost revenue; overdocumentation = compliance risk
+
+#### Nursing Informatics
+
+| Standard | Full Name | Purpose |
+|---|---|---|
+| **NANDA-I** | North American Nursing Diagnosis Association — International | Standardized nursing diagnoses (e.g., "Risk for Falls", "Impaired Gas Exchange") |
+| **NIC** | Nursing Interventions Classification | Standardized nursing intervention labels and definitions |
+| **NOC** | Nursing Outcomes Classification | Standardized, measurable nursing care outcomes |
+| **NMDS** | Nursing Minimum Data Set | Core nursing data elements for electronic capture, comparison, and research |
+
+Nursing informatics bridges clinical nursing practice and HIT: EHR workflow design, CDS for nursing (early warning scores, fall risk tools), clinical documentation optimization, and evidence-based outcomes measurement.
+
+#### Clinical Registries
+
+- **Disease registry** → population-level database tracking specific diagnoses (cancer, cardiac, diabetes) across patients over time
+- Used for: quality measurement; outcomes tracking; public health surveillance; research; regulatory reporting to payers and accreditors
+- **Examples:** National Cancer Registry, STS (Society of Thoracic Surgeons) database, AHA Get With The Guidelines (GWTG) registry, state immunization registries
+- Registries feed **population health management** platforms and **quality dashboard** reporting
+- Data inputs: HL7 interfaces from EHR (automated) OR manual chart abstraction OR NLP extraction from clinical notes
+
+> **Exam tip:** CAC proposes codes — a coder must validate and finalize. CDI improves documentation before coding to ensure accurate DRG assignment. Registry data quality depends on structured (not free-text) clinical documentation.
+
+---
+
 ## Domain 2 — Quick Reference Cheatsheet
 
 ```

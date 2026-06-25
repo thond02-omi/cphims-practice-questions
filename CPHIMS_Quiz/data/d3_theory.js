@@ -751,6 +751,49 @@ Scope · Schedule · Cost · Quality · Resource · Communication · Risk · Pro
 - Review and update policies after incidents or regulatory changes</p>
 <hr />
 <h2>Domain 3 — Quick Cheatsheet</h2>
+<hr />
+<h2>ITIL Service Management and Security Incident Response</h2>
+<hr />
+<h3>ITIL — IT Service Management Key Processes</h3>
+<table>
+<thead><tr><th>Process</th><th>Purpose</th><th>Healthcare HIT Example</th></tr></thead>
+<tbody>
+<tr><td><strong>Incident Management</strong></td><td>Restore normal service as quickly as possible after an unplanned outage or degradation</td><td>EHR login failure at 6 AM → immediate service restoration; ticket logged</td></tr>
+<tr><td><strong>Problem Management</strong></td><td>Find and eliminate the root cause of one or more recurring incidents</td><td>Three EHR outages per month → root cause analysis → permanent fix (server upgrade)</td></tr>
+<tr><td><strong>Change Management</strong></td><td>Control all changes to minimize risk to IT services</td><td>CAB review required before deploying new CDS alert to production</td></tr>
+<tr><td><strong>Service Request Management</strong></td><td>Handle standard, pre-approved user requests (not incidents)</td><td>New user account; access role change; password reset</td></tr>
+<tr><td><strong>Service Catalog</strong></td><td>Documented list of all IT services, SLAs, and how to request them</td><td>"Order a new workstation" — defined process, SLA, and approval workflow</td></tr>
+<tr><td><strong>CMDB</strong></td><td>Configuration Management Database — authoritative IT asset inventory and relationships</td><td>Know which servers support which EHR modules for impact assessment before a change</td></tr>
+</tbody>
+</table>
+<p><strong>Incident vs. Problem:</strong></p>
+<ul>
+<li><strong>Incident</strong> = unplanned disruption RIGHT NOW → restore service fast; root cause is secondary</li>
+<li><strong>Problem</strong> = underlying root cause of recurring incidents → eliminate permanently after service restored</li>
+</ul>
+<p><em>Exam tip:</em> EHR is down and patients are waiting → FIRST step is to restore service (incident management), NOT investigate root cause (problem management). Root cause investigation comes AFTER service is restored.</p>
+<h3>NIST Cybersecurity Framework (CSF) Applied to Healthcare HIT</h3>
+<table>
+<thead><tr><th>Function</th><th>Healthcare HIT Application</th></tr></thead>
+<tbody>
+<tr><td><strong>Identify</strong></td><td>IT asset inventory; annual HIPAA risk assessment; data classification by sensitivity</td></tr>
+<tr><td><strong>Protect</strong></td><td>RBAC; MFA; encryption; patching; security training; BAA for all PHI-accessing vendors</td></tr>
+<tr><td><strong>Detect</strong></td><td>SIEM continuous monitoring; audit log review; vulnerability scanning; IDS/IPS alerting</td></tr>
+<tr><td><strong>Respond</strong></td><td>Incident response plan activation; containment; forensic analysis; breach notification to HHS and individuals within 60 days</td></tr>
+<tr><td><strong>Recover</strong></td><td>BCP/DRP activation; restore from verified clean backup; post-incident review; update controls</td></tr>
+</tbody>
+</table>
+<h3>Security Incident Response Sequence (NIST SP 800-61)</h3>
+<ol>
+<li><strong>Preparation</strong> — policies, tools, and response team established BEFORE any incident</li>
+<li><strong>Detection &amp; Analysis</strong> — identify and confirm the incident; determine scope and severity</li>
+<li><strong>Containment</strong> — isolate affected systems; prevent lateral spread via network segmentation</li>
+<li><strong>Eradication</strong> — remove malware; patch exploited vulnerability; clean affected systems</li>
+<li><strong>Recovery</strong> — restore from verified clean backup; validate integrity before returning to production</li>
+<li><strong>Post-Incident Review</strong> — lessons learned; update incident response plan; improve controls</li>
+</ol>
+<p><em>Critical sequence:</em> <strong>Containment → Eradication → Recovery</strong>. Never restore systems before eradicating the threat — malware will immediately reinfect restored systems.</p>
+<hr />
 <pre><code>SDLC PHASES:
 1. Planning  2. Analysis/Requirements  3. Design
 4. Build/Development  5. Testing  6. Implementation
@@ -815,5 +858,18 @@ RBAC          → role-based access
 Least privilege → minimum necessary access
 Access review  → periodic recertification
 Termination    → immediate revocation on exit
+
+ITIL CONCEPTS:
+Incident Mgmt → restore service FAST (not root cause); ticket logged
+Problem Mgmt  → root cause of recurring incidents → permanent fix (after service restored)
+Change Mgmt   → CAB review before any change to production
+Service Req.  → pre-approved, standard user requests (not incidents)
+CMDB          → authoritative IT asset inventory + relationships
+Incident ≠ Problem: Incident = restore now | Problem = fix root cause permanently
+EHR is down → FIRST: restore service (incident); root cause investigation = AFTER
+
+NIST CSF:     Identify → Protect → Detect → Respond → Recover
+IR SEQUENCE:  Preparation → Detection → Containment → Eradication → Recovery → Post-Review
+KEY ORDER:    Containment BEFORE Eradication BEFORE Recovery (critical)
 </code></pre></div>
 `;

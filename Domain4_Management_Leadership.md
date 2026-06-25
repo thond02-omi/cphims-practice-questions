@@ -444,6 +444,48 @@
 
 ---
 
+### Task A.20 Extension — Leadership Theories
+
+#### Leadership Styles
+
+| Theory | Key Concept | Healthcare HIT Application |
+|---|---|---|
+| **Transformational** | Inspires followers through vision and meaning; creates lasting change through intrinsic motivation | CIO articulates a compelling EHR adoption vision aligned to patient care mission |
+| **Transactional** | Manages through reward and punishment tied to defined performance expectations | Performance reviews with bonuses tied to SLA metrics; disciplinary action for policy violations |
+| **Servant leadership** | Leader serves followers first; removes obstacles; enables team success | HIT director who focuses on clearing barriers for implementation team rather than directing |
+| **Situational (Hersey-Blanchard)** | Adapts leadership style to match the development level of the follower | High-directive style for new analyst; delegating style for senior informaticist |
+
+#### Situational Leadership — Development Levels and Matching Styles
+
+| Follower Level | Characteristics | Appropriate Leader Style |
+|---|---|---|
+| **D1 — Enthusiastic Beginner** | Low competence, high commitment | **S1 — Directing:** tell what/how/when; high task, low relationship support |
+| **D2 — Disillusioned Learner** | Growing competence, reduced commitment | **S2 — Coaching:** explain why + how; high task AND high relationship support |
+| **D3 — Capable but Cautious** | High competence, variable confidence | **S3 — Supporting:** listen and encourage; low task, high relationship support |
+| **D4 — Self-Reliant Achiever** | High competence, high commitment | **S4 — Delegating:** hand off; trust and empower; low task, low relationship support |
+
+> **Exam tip:** Situational leadership matches style to the FOLLOWER's development level — not the task difficulty. If Desire (ADKAR) is low, the follower may be at D2 regardless of competence — apply coaching (S2).
+
+#### IT Governance Frameworks
+
+| Framework | Focus | Key Concept |
+|---|---|---|
+| **COBIT** | IT governance aligned to business objectives | Separates governance (board/executives) from management (IT operations); 5 principles including covering the enterprise end-to-end |
+| **ITIL** | IT service management delivery and support | Best-practice framework: service strategy → design → transition → operation → continual improvement |
+| **ISO/IEC 27001** | Information security management system (ISMS) | International standard for risk-based, systematic information security management |
+
+#### Healthcare IT Governance Committee Structure
+
+| Committee | Purpose | Typical Members |
+|---|---|---|
+| **IT Steering Committee** | Strategic IT investment decisions; portfolio prioritization | CIO, CFO, CMO, CNO, COO, department heads |
+| **Clinical Informatics Committee** | Clinical HIT decisions; CDS governance; EHR workflow standards | CMIO, CNIO, physician champions, nursing informatics, pharmacy, IT |
+| **Data Governance Council** | Data standards; quality; ownership; stewardship policies | CIO, CDO, data stewards, compliance, legal |
+| **Change Advisory Board (CAB)** | Technical change review and approval | IT leadership, application owners, security, operations |
+| **Privacy/Security Committee** | Privacy/security policy; breach response; risk management oversight | CISO, Privacy Officer, Compliance Officer, Legal |
+
+---
+
 ## Domain 4 — Quick Reference Cheatsheet
 
 ```

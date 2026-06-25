@@ -726,6 +726,38 @@ window.THEORY_D2 = `
 - Use tiered alerting (soft-stop = informational; hard-stop = required action before proceeding)</p>
 <hr />
 <h2>Domain 2 — Quick Cheatsheet</h2>
+<hr />
+<h2>CDI, Nursing Informatics, and Clinical Registries</h2>
+<hr />
+<h3>Clinical Documentation Improvement (CDI)</h3>
+<ul>
+<li><strong>CDI program</strong> → ensures clinical documentation accurately reflects patient condition, complexity, and resource utilization — directly drives DRG assignment and reimbursement accuracy</li>
+<li><strong>CDI specialists</strong> → review records concurrently and query physicians for clarification of diagnosis specificity (e.g., "CHF" → "acute-on-chronic systolic heart failure, NYHA Class III")</li>
+<li><strong>Query types:</strong> concurrent (during hospitalization — allows real-time correction) or retrospective (after discharge)</li>
+<li><strong>Computer-Assisted Coding (CAC)</strong> → NLP-based software proposes ICD-10-CM/PCS and CPT codes from clinical text for coder review and validation; increases coding speed and consistency</li>
+<li><strong>Impact:</strong> Higher specificity → more accurate DRG → appropriate reimbursement. Underdocumentation = lost revenue; overdocumentation = compliance risk</li>
+</ul>
+<h3>Nursing Informatics Terminology</h3>
+<table>
+<thead><tr><th>Standard</th><th>Full Name</th><th>Purpose</th></tr></thead>
+<tbody>
+<tr><td><strong>NANDA-I</strong></td><td>North American Nursing Diagnosis Association — International</td><td>Standardized nursing diagnoses (e.g., "Risk for Falls")</td></tr>
+<tr><td><strong>NIC</strong></td><td>Nursing Interventions Classification</td><td>Standardized nursing intervention labels and definitions</td></tr>
+<tr><td><strong>NOC</strong></td><td>Nursing Outcomes Classification</td><td>Standardized, measurable outcomes of nursing care</td></tr>
+<tr><td><strong>NMDS</strong></td><td>Nursing Minimum Data Set</td><td>Core nursing data elements for electronic capture, comparison, and research</td></tr>
+</tbody>
+</table>
+<p>Nursing informatics bridges clinical nursing practice and HIT: EHR workflow design, clinical documentation optimization, CDS for nursing (early warning scores, fall risk tools), and evidence-based outcomes measurement.</p>
+<h3>Clinical Registries</h3>
+<ul>
+<li><strong>Disease registry</strong> → population-level database tracking specific diagnoses across patients over time</li>
+<li>Used for: quality measurement; outcomes tracking; public health surveillance; research; regulatory reporting</li>
+<li><strong>Examples:</strong> National Cancer Registry, STS (Society of Thoracic Surgeons) database, AHA Get With The Guidelines (GWTG) registry, state immunization registries</li>
+<li>Registries feed <strong>population health management</strong> platforms and drive <strong>quality dashboard</strong> reporting</li>
+<li>Data inputs: HL7 interfaces from EHR (automated) OR manual chart abstraction OR NLP extraction from clinical notes</li>
+</ul>
+<p><em>Exam tip:</em> CAC proposes codes — a coder must validate and finalize. CDI improves documentation BEFORE coding to ensure accurate DRG assignment. Registry data quality depends on structured (not free-text) clinical documentation in the EHR.</p>
+<hr />
 <pre><code>DOSAGE FREQUENCY:
 QD=daily  BID=2×/day  TID=3×/day  QID=4×/day
 PRN=as needed  STAT=immediately  QHS=bedtime
@@ -779,5 +811,23 @@ CDS FIVE RIGHTS (Osheroff):
 ALERT FATIGUE:
 Override rate &gt;90% = poor alert design or low value
 Fix: CDS governance committee → audit → retire / retune
+
+CDI (Clinical Documentation Improvement):
+CDI specialist → queries physicians for diagnostic specificity
+Concurrent query → during hospitalization (preferred; real-time correction)
+CAC → NLP proposes codes; coder validates and finalizes; increases speed + consistency
+Higher specificity → accurate DRG → appropriate reimbursement
+
+NURSING INFORMATICS:
+NANDA-I → standardized nursing diagnoses
+NIC     → standardized nursing interventions
+NOC     → standardized, measurable nursing outcomes
+NMDS    → core nursing data elements for research and comparison
+
+CLINICAL REGISTRIES:
+Disease registry → population-level outcomes tracking by diagnosis over time
+Used for: quality measurement, public health reporting, payer reporting, research
+Data sources: HL7 interfaces (automated), manual abstraction, NLP from clinical notes
+Registry data quality ∝ structured documentation in EHR (structured > free text)
 </code></pre></div>
 `;

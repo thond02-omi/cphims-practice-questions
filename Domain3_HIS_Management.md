@@ -645,6 +645,50 @@ Scope · Schedule · Cost · Quality · Resource · Communication · Risk · Pro
 
 ---
 
+### Task C.5 Extension — ITIL Service Management
+
+**ITIL (Information Technology Infrastructure Library)** — framework for managing IT services aligned to business needs.
+
+| Process | Purpose | Healthcare HIT Example |
+|---|---|---|
+| **Incident Management** | Restore normal service as quickly as possible after an unplanned outage | EHR login failure at 6 AM → immediate service restoration; ticket logged |
+| **Problem Management** | Find and eliminate root cause of one or more recurring incidents | Three EHR outages per month → root cause analysis → permanent fix |
+| **Change Management** | Control changes to minimize risk to IT services | CAB review before deploying new CDS alert to production |
+| **Service Request Management** | Handle standard, pre-approved user requests (not incidents) | New user account; access role change; password reset |
+| **Service Catalog** | Documented list of all IT services offered, SLAs, and how to request them | "Order a new workstation" — defined process, SLA, and approval workflow |
+| **CMDB** | Configuration Management Database — authoritative IT asset inventory and relationships | Know which servers support which EHR modules for impact assessment |
+
+**Incident vs. Problem:**
+- **Incident** = unplanned disruption RIGHT NOW → restore service fast (not root cause)
+- **Problem** = underlying root cause of recurring incidents → eliminate permanently
+
+> **Exam tip:** EHR is down, patients are waiting → FIRST step is to restore service (incident management), NOT investigate root cause. Root cause investigation (problem management) comes after service is restored.
+
+### Task E.2 Extension — NIST Cybersecurity Framework and Incident Response
+
+#### NIST Cybersecurity Framework (CSF) Applied to Healthcare HIT
+
+| Function | Healthcare HIT Application |
+|---|---|
+| **Identify** | IT asset inventory; annual HIPAA risk assessment; data classification by sensitivity |
+| **Protect** | RBAC; MFA; encryption; patching; security awareness training; BAA for all PHI-accessing vendors |
+| **Detect** | SIEM continuous monitoring; audit log review; vulnerability scanning; IDS/IPS alerting |
+| **Respond** | Incident response plan activation; containment; forensic analysis; breach notification to HHS and individuals |
+| **Recover** | BCP/DRP activation; restore from verified clean backup; post-incident review; update controls |
+
+#### Security Incident Response Sequence (NIST SP 800-61)
+
+1. **Preparation** — policies, tools, and response team established BEFORE any incident
+2. **Detection & Analysis** — identify and confirm the incident; determine scope and severity
+3. **Containment** — isolate affected systems; prevent lateral spread via network segmentation
+4. **Eradication** — remove malware; patch exploited vulnerability; clean affected systems
+5. **Recovery** — restore from verified clean backup; validate integrity before returning to production
+6. **Post-Incident Review** — lessons learned; update incident response plan; improve controls
+
+> **Critical sequence:** Containment → Eradication → Recovery. Never restore systems before eradicating the threat — malware will immediately reinfect restored systems.
+
+---
+
 ## Domain 3 — Quick Reference Cheatsheet
 
 ```
