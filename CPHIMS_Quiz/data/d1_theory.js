@@ -636,6 +636,35 @@ window.THEORY_D1 = `
 </table>
 <h2>Domain 1 — Quick Cheatsheet</h2>
 <hr />
+<h2>Information Blocking Exceptions and Telehealth Regulations</h2>
+<hr />
+<h3>Information Blocking — Valid Exceptions (21st Century Cures Act)</h3>
+<p>A vendor or health system may decline to share data ONLY if a specific, documented, and proportionate exception applies:</p>
+<table>
+<thead><tr><th>Exception</th><th>When It Applies</th><th>Key Requirement</th></tr></thead>
+<tbody>
+<tr><td><strong>Privacy</strong></td><td>Sharing would violate applicable law (e.g., 42 CFR Part 2 for SUD records)</td><td>Must cite the specific legal prohibition</td></tr>
+<tr><td><strong>Security</strong></td><td>A specific, identifiable security risk from sharing with this particular requestor</td><td>Must be specific and proportionate — vague claims do not qualify</td></tr>
+<tr><td><strong>Infeasibility</strong></td><td>Technical or operational factors make sharing genuinely impossible</td><td>Must document why sharing is not technically feasible</td></tr>
+<tr><td><strong>Health and Safety</strong></td><td>Disclosure would endanger the patient or another person</td><td>Narrow; must be articulable, specific harm</td></tr>
+<tr><td><strong>Content and Manner</strong></td><td>Requested format is impossible, but a reasonable alternative exists</td><td>Must offer the alternative</td></tr>
+<tr><td><strong>Fees</strong></td><td>Fees charged are not above the cost of sharing</td><td>Cannot use fees as a pretext to block</td></tr>
+<tr><td><strong>Licensing</strong></td><td>Real legal licensing restriction prevents sharing</td><td>Must be a genuine legal obligation, not a commercial pretext</td></tr>
+</tbody>
+</table>
+<p><em>Exam tip:</em> "Security is too risky" without identifying the specific risk, specific requestor, and specific harm is NOT a valid exception — it may constitute information blocking under the 21st Century Cures Act.</p>
+<h3>Telehealth Regulatory Landscape</h3>
+<table>
+<thead><tr><th>Regulation</th><th>Key Provision</th></tr></thead>
+<tbody>
+<tr><td><strong>Ryan Haight Act</strong></td><td>DEA rule requiring at least one in-person evaluation before prescribing controlled substances via telemedicine; emergency waivers issued during COVID-19</td></tr>
+<tr><td><strong>State licensure</strong></td><td>Clinician must generally be licensed in the <strong>patient's state</strong> at time of encounter — not the clinician's home state</td></tr>
+<tr><td><strong>Store-and-forward</strong></td><td>Asynchronous telehealth: data/images sent to remote clinician for later review; common in dermatology, radiology, ophthalmology</td></tr>
+<tr><td><strong>RPM billing</strong></td><td>Separate CPT codes (99453–99458) for device setup, data transmission, and clinical management under Medicare</td></tr>
+<tr><td><strong>HIPAA and telehealth</strong></td><td>Platforms must be HIPAA-compliant; consumer apps (FaceTime, Zoom personal) permitted only under temporary enforcement discretion</td></tr>
+</tbody>
+</table>
+<hr />
 <h2>Cybersecurity Threats and Incident Response</h2>
 <hr />
 <h3>Cybersecurity Threat Taxonomy</h3>
@@ -739,6 +768,21 @@ FRAMEWORKS:
 Triple Aim    → experience + population health + cost
 Quadruple Aim → + clinician well-being
 SDOH          → social determinants of health
+
+INFORMATION BLOCKING EXCEPTIONS (21st Century Cures Act):
+Privacy     → cite specific law (e.g., 42 CFR Part 2)
+Security    → must be specific risk + specific requestor (vague = NOT valid)
+Infeasibility → document why technically impossible
+Health/Safety → specific, articulable harm only
+Content/Manner → must offer reasonable alternative format
+Fees        → cannot exceed cost of sharing
+Licensing   → real legal obligation, not commercial pretext
+
+TELEHEALTH:
+Ryan Haight Act → one in-person visit BEFORE prescribing controlled substances via telemedicine
+State licensure → clinician licensed in PATIENT's state (not clinician's state)
+Store-and-forward → async telehealth; data/image sent for later review (derm, ophth, radiology)
+RPM billing → CPT 99453-99458 for device setup, data transmission, clinical management
 
 CYBERSECURITY THREATS:
 Ransomware    → encrypts files; restore from clean backup; do NOT pay ransom (no guarantee)

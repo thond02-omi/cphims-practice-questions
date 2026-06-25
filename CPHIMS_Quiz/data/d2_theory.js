@@ -727,6 +727,48 @@ window.THEORY_D2 = `
 <hr />
 <h2>Domain 2 — Quick Cheatsheet</h2>
 <hr />
+<h2>Control Charts, NLP, and Advanced Analytics</h2>
+<hr />
+<h3>Control Charts vs. Run Charts</h3>
+<table>
+<thead><tr><th>Feature</th><th>Run Chart</th><th>Control Chart</th></tr></thead>
+<tbody>
+<tr><td><strong>What it shows</strong></td><td>Trend over time (simple line graph)</td><td>Trend + statistical control limits (UCL / LCL / centerline)</td></tr>
+<tr><td><strong>Detects</strong></td><td>Directional trends and shifts — visually</td><td>Common cause vs. special cause variation — statistically</td></tr>
+<tr><td><strong>When to use</strong></td><td>Quick visual trend monitoring; QI tracking</td><td>Determine if a change is statistically significant or normal variation</td></tr>
+</tbody>
+</table>
+<p><strong>Common Cause vs. Special Cause Variation:</strong></p>
+<ul>
+<li><strong>Common cause (normal)</strong> → random variation inherent to the process; points within control limits; stable process — do NOT overreact to individual data points</li>
+<li><strong>Special cause (assignable)</strong> → non-random variation from an identifiable source; signals a real change → investigate</li>
+</ul>
+<p><strong>Control chart signals indicating special cause:</strong></p>
+<ul>
+<li>One point beyond the 3σ upper or lower control limit</li>
+<li>Eight or more consecutive points on the same side of the centerline</li>
+<li>Six consecutive points trending consistently up or down</li>
+</ul>
+<p><em>Exam tip:</em> "Did our protocol actually improve outcomes?" → use control chart (distinguishes real improvement from normal variation). Run chart = simpler visual. Control chart = statistical rigor with UCL/LCL.</p>
+<h3>Natural Language Processing (NLP) in Healthcare</h3>
+<table>
+<thead><tr><th>NLP Application</th><th>Use Case</th></tr></thead>
+<tbody>
+<tr><td><strong>Registry population</strong></td><td>Auto-extract diagnoses, procedures, and medications from clinical notes to populate disease registries</td></tr>
+<tr><td><strong>Computer-Assisted Coding (CAC)</strong></td><td>Propose ICD-10 and CPT codes from clinical documentation; coder validates and finalizes</td></tr>
+<tr><td><strong>Adverse event detection</strong></td><td>Identify falls, infections, and adverse drug events from nursing notes and discharge summaries</td></tr>
+<tr><td><strong>Clinical trial eligibility</strong></td><td>Screen patient records for inclusion/exclusion criteria automatically</td></tr>
+<tr><td><strong>Quality measure abstraction</strong></td><td>Extract quality measure data elements from unstructured free text</td></tr>
+</tbody>
+</table>
+<p><strong>Key NLP components:</strong></p>
+<ul>
+<li><strong>Named Entity Recognition (NER)</strong> → identifies and classifies clinical entities (diagnoses, medications, anatomical locations)</li>
+<li><strong>Negation detection</strong> → distinguishes "patient has pneumonia" from "no evidence of pneumonia"</li>
+<li><strong>Assertion detection</strong> → determines whether a finding is current, historical, or hypothetical</li>
+</ul>
+<p><em>Exam tip:</em> NLP works on FREE TEXT (progress notes, discharge summaries). Structured fields do not require NLP. NLP quality depends on documentation quality — poorly documented notes produce unreliable extractions.</p>
+<hr />
 <h2>CDI, Nursing Informatics, and Clinical Registries</h2>
 <hr />
 <h3>Clinical Documentation Improvement (CDI)</h3>
@@ -811,6 +853,22 @@ CDS FIVE RIGHTS (Osheroff):
 ALERT FATIGUE:
 Override rate &gt;90% = poor alert design or low value
 Fix: CDS governance committee → audit → retire / retune
+
+CONTROL CHARTS vs RUN CHARTS:
+Run chart     → simple trend over time; visual only
+Control chart → trend + UCL/LCL (3σ); detects common vs. special cause variation
+Common cause  → random variation within control limits; stable process; do NOT overreact
+Special cause → non-random; outside control limits or 8+ pts same side → investigate
+Signals: 1 pt beyond 3σ | 8 consecutive same side | 6 consecutive trending up/down
+"Did the protocol really work?" → control chart (not just a run chart)
+
+NLP (Natural Language Processing):
+Works on FREE TEXT (notes, summaries) — NOT structured fields
+NER → identifies clinical entities (diagnoses, medications, locations)
+Negation detection → "no pneumonia" ≠ "has pneumonia"
+Assertion → current vs. historical vs. hypothetical finding
+Use cases: registry population, CAC code proposals, adverse event detection, trial eligibility
+NLP quality ∝ documentation quality (free text → GIGO principle)
 
 CDI (Clinical Documentation Improvement):
 CDI specialist → queries physicians for diagnostic specificity

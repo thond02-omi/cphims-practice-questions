@@ -377,6 +377,37 @@ Names · Dates (except year) · Phone · Fax · Email · SSN · MRN · Health pl
 
 ---
 
+### Task A.4 Extension — Information Blocking Exceptions and Telehealth Regulations
+
+#### Information Blocking — Valid Exceptions (21st Century Cures Act)
+
+A vendor or health system may decline to share data ONLY if a specific, documented, and proportionate exception applies:
+
+| Exception | When It Applies | Key Requirement |
+|---|---|---|
+| **Privacy** | Sharing would violate applicable law (e.g., 42 CFR Part 2 for SUD records) | Must cite the specific legal prohibition |
+| **Security** | A specific, identifiable security risk from sharing with this particular requestor | Must be specific and proportionate — vague claims do not qualify |
+| **Infeasibility** | Technical or operational factors make sharing genuinely impossible | Must document why sharing is not technically feasible |
+| **Health and Safety** | Disclosure would endanger the patient or another person | Narrow; must be articulable, specific harm |
+| **Content and Manner** | Requested format is impossible, but a reasonable alternative exists | Must offer the alternative |
+| **Fees** | Fees charged are not above the cost of sharing | Cannot use fees as a pretext to block |
+| **Licensing** | Real legal licensing restriction prevents sharing | Must be a genuine legal obligation, not a commercial pretext |
+
+> **Exam tip:** "Security is too risky" without identifying the specific risk, specific requestor, and specific harm is NOT a valid exception — it may constitute information blocking.
+
+#### Telehealth Regulatory Landscape
+
+| Regulation | Key Provision |
+|---|---|
+| **Ryan Haight Act** | DEA rule requiring at least one in-person evaluation before prescribing controlled substances via telemedicine; emergency waivers issued during COVID-19 |
+| **State licensure** | Clinician must generally be licensed in the **patient's state** at time of encounter — not the clinician's home state |
+| **CMS telehealth coverage** | Medicare telehealth coverage expanded via 1135 waivers during COVID-19; permanent extensions require ongoing legislation |
+| **Store-and-forward** | Asynchronous telehealth: data/images sent to remote clinician for later review (dermatology, radiology, ophthalmology) |
+| **RPM billing** | Separate CPT codes (99453–99458) for device setup, data transmission, and clinical management |
+| **HIPAA and telehealth** | Platforms must be HIPAA-compliant; consumer apps permitted under temporary enforcement discretion only |
+
+---
+
 ### Task B.2 Extension — Cybersecurity Threats and Incident Response
 
 #### Cybersecurity Threat Taxonomy

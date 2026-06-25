@@ -645,6 +645,35 @@ Scope · Schedule · Cost · Quality · Resource · Communication · Risk · Pro
 
 ---
 
+### Task C.2 Extension — Release Management, Change Impact Assessment, and PIR
+
+#### Release Management
+
+- **Release management** → packages multiple approved changes into a single scheduled deployment event; reduces maintenance windows and manages inter-change dependencies
+- Release package contains: list of all changes, individual test results, combined rollback plan, communication plan, post-deployment monitoring criteria
+- Prevents deployment fatigue from excessive individual change windows
+
+#### Change Impact Assessment
+
+Before any production change, document:
+1. **Affected systems** → which applications, interfaces, databases will be impacted
+2. **Affected workflows** → which clinical/operational workflows and user groups are affected
+3. **Testing required** → what must be validated in non-production environments before deploying
+4. **Rollback criteria** → specific measurable conditions (error rate threshold, downtime duration) that trigger rollback
+5. **Communication plan** → who must be notified and when (before, during, after deployment)
+
+#### Post-Implementation Review (PIR)
+
+Conducted after every significant change deployment:
+- Were the change objectives achieved?
+- Did unexpected issues occur? What was the root cause?
+- Was the rollback plan activated? Why or why not?
+- What would improve the next deployment?
+
+PIR findings update the risk register and change management procedures. PIR findings do NOT trigger disciplinary action unless deliberate policy violations occurred.
+
+---
+
 ### Task C.5 Extension — ITIL Service Management
 
 **ITIL (Information Technology Infrastructure Library)** — framework for managing IT services aligned to business needs.
@@ -663,6 +692,22 @@ Scope · Schedule · Cost · Quality · Resource · Communication · Risk · Pro
 - **Problem** = underlying root cause of recurring incidents → eliminate permanently
 
 > **Exam tip:** EHR is down, patients are waiting → FIRST step is to restore service (incident management), NOT investigate root cause. Root cause investigation (problem management) comes after service is restored.
+
+### Task D.4 Extension — Benefits Realization Timeline
+
+| Checkpoint | When | What to Measure |
+|---|---|---|
+| **Baseline** | Before go-live | Establish pre-implementation metric values (ALOS, error rates, scan rates) |
+| **30-day check** | 1 month post | Initial adoption rates; help desk ticket volume; critical issue resolution |
+| **90-day review** | 3 months post | Workflow stabilization; early efficiency gains; training compliance rates |
+| **6-month review** | 6 months post | First measurable outcome improvements; initial ROI data |
+| **12-month review** | 1 year post | Full benefits realization evaluation; actual ROI vs. projected; go/no-go on next phase |
+
+Benefits realization requires a **pre-defined measurement plan established BEFORE go-live** — defining success metrics retrospectively is not acceptable.
+
+> **Exam tip:** Benefits realization ≠ UAT. UAT validates that the system works as configured. Benefits realization (months post go-live) measures whether the system delivered the clinical and financial improvements that justified the investment.
+
+---
 
 ### Task E.2 Extension — NIST Cybersecurity Framework and Incident Response
 

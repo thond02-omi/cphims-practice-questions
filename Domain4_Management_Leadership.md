@@ -444,6 +444,37 @@
 
 ---
 
+### Task A.17 Extension — Risk Response Strategies with Healthcare Examples
+
+#### Risk Responses Applied
+
+| Strategy | Definition | Healthcare HIT Example |
+|---|---|---|
+| **Avoid** | Eliminate the risk by changing the plan or scope | Cancel a vendor integration that would expose PHI to an unvetted third party |
+| **Mitigate** | Reduce the probability or impact of the risk | Network-segment an unpatched legacy device to limit the attack surface |
+| **Transfer** | Shift the financial consequence to a third party | Purchase cyber liability insurance for ransomware events |
+| **Accept** | Acknowledge and document the risk without specific control action | Accept a known minor UI bug with low frequency and no patient safety impact; log in risk register |
+
+**Combined strategies:** A single risk commonly requires multiple responses:
+- **Scenario:** Unpatched legacy system (18 months to replacement) with known vulnerability
+- **Response:** Mitigate (network segmentation) + Transfer (cyber liability insurance)
+- This is NOT avoidance (system stays in use) and NOT acceptance alone (active controls are added)
+
+#### Vendor Concentration Risk
+
+- **Definition:** Over-reliance on a single vendor for multiple critical systems; if vendor is acquired, fails, or discontinues, multiple systems are disrupted simultaneously
+- **Example:** One vendor providing EHR + revenue cycle + scheduling + analytics → single point of failure for entire clinical and financial operation
+- **Controls:**
+  - **Source code escrow** → third party holds source code; released if vendor fails
+  - **Transition assistance clauses** → vendor contractually obligated to support migration to a replacement
+  - **Data portability rights** → organization can extract data in a usable format at any time
+  - **Diversification** → avoid awarding all critical contracts to a single vendor
+  - **Vendor financial due diligence** → assess stability, ownership, and acquisition risk during procurement
+
+> **Exam tip:** Vendor concentration risk is assessed at PROCUREMENT — not after the system is live. Contractual protections (escrow, data portability, transition assistance) must be negotiated at contract execution.
+
+---
+
 ### Task A.20 Extension — Leadership Theories
 
 #### Leadership Styles

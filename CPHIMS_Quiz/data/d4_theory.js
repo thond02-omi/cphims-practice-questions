@@ -169,6 +169,37 @@ window.THEORY_D4 = `
 <hr />
 <h2>Domain 4 — Quick Cheatsheet</h2>
 <hr />
+<h2>Risk Response Strategies and Vendor Concentration Risk</h2>
+<hr />
+<h3>Risk Response Strategies Applied in Healthcare HIT</h3>
+<table>
+<thead><tr><th>Strategy</th><th>Definition</th><th>Healthcare HIT Example</th></tr></thead>
+<tbody>
+<tr><td><strong>Avoid</strong></td><td>Eliminate the risk by changing the plan or scope</td><td>Cancel a vendor integration that would expose PHI to an unvetted third party</td></tr>
+<tr><td><strong>Mitigate</strong></td><td>Reduce the probability or impact of the risk</td><td>Network-segment an unpatched legacy device to limit the attack surface</td></tr>
+<tr><td><strong>Transfer</strong></td><td>Shift the financial consequence to a third party</td><td>Purchase cyber liability insurance for ransomware events</td></tr>
+<tr><td><strong>Accept</strong></td><td>Acknowledge and document the risk without specific control action</td><td>Accept a known minor UI bug with low frequency and no patient safety impact; log in risk register</td></tr>
+</tbody>
+</table>
+<p><strong>Combined strategies — single risk can require multiple responses:</strong><br />
+Unpatched legacy system (18 months to replacement) with known vulnerability:<br />
+→ <strong>Mitigate</strong> (network segmentation) + <strong>Transfer</strong> (cyber liability insurance)<br />
+→ This is NOT avoidance (system stays in use) and NOT acceptance alone (active controls are applied)</p>
+<h3>Vendor Concentration Risk</h3>
+<ul>
+<li><strong>Definition:</strong> Over-reliance on a single vendor for multiple critical systems; if the vendor is acquired, fails, or discontinues products, multiple systems are disrupted simultaneously</li>
+<li><strong>Example:</strong> One vendor for EHR + revenue cycle + scheduling + analytics → single point of failure for entire clinical and financial operation</li>
+</ul>
+<p><strong>Controls:</strong></p>
+<ul>
+<li><strong>Source code escrow</strong> → third party holds source code; released to organization if vendor fails</li>
+<li><strong>Transition assistance clauses</strong> → vendor contractually obligated to support migration to a replacement system</li>
+<li><strong>Data portability rights</strong> → organization can extract data in a usable format at any time</li>
+<li><strong>Diversification</strong> → avoid awarding all critical contracts to a single vendor</li>
+<li><strong>Vendor financial due diligence</strong> → assess financial stability, ownership structure, and acquisition risk during procurement</li>
+</ul>
+<p><em>Exam tip:</em> Vendor concentration risk and financial stability are assessed at PROCUREMENT — not after the system is live. Contractual protections (escrow, data portability, transition assistance) must be negotiated at contract execution, not after a crisis.</p>
+<hr />
 <h2>Leadership Theories and IT Governance</h2>
 <hr />
 <h3>Leadership Styles</h3>
@@ -274,6 +305,25 @@ RACI → Responsible, Accountable, Consulted, Informed
 Job description → title, responsibilities, competencies, qualifications
 360° feedback → peer review for competency assessment
 Succession planning → develop high-potential future leaders
+
+RISK RESPONSES WITH HEALTHCARE EXAMPLES:
+Avoid      → cancel project exposing PHI to unvetted vendor
+Mitigate   → network-segment unpatched legacy device
+Transfer   → cyber liability insurance for ransomware
+Accept     → document low-impact bug in risk register; no action
+Combined:  unpatched system (18mo to replacement) = Mitigate (segmentation) + Transfer (insurance)
+           NOT avoidance (still in use) + NOT acceptance alone (controls applied)
+
+VENDOR CONCENTRATION RISK:
+Definition → over-reliance on one vendor for multiple critical systems
+Risk       → vendor acquired/fails → multiple systems disrupted simultaneously
+Controls:
+  Source code escrow     → third party holds code; released if vendor fails
+  Transition assistance  → contractual obligation to support migration
+  Data portability       → extract data in usable format at any time
+  Diversification        → don't award all critical contracts to one vendor
+  Financial due diligence → assess stability + ownership + acquisition risk
+WHEN: assess at PROCUREMENT (not after); protections negotiated at contract signing
 
 LEADERSHIP THEORIES:
 Transformational → vision + inspiration → intrinsic motivation + lasting change

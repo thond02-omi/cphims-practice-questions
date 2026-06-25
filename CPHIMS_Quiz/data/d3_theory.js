@@ -752,6 +752,46 @@ Scope · Schedule · Cost · Quality · Resource · Communication · Risk · Pro
 <hr />
 <h2>Domain 3 — Quick Cheatsheet</h2>
 <hr />
+<h2>Release Management, Change Impact Assessment, PIR, and Benefits Realization</h2>
+<hr />
+<h3>Release Management</h3>
+<ul>
+<li><strong>Release management</strong> → packages multiple approved changes into a single scheduled deployment event; reduces maintenance windows and manages inter-change dependencies</li>
+<li>Release package contains: list of all changes, test results, combined rollback plan, communication plan, post-deployment monitoring criteria</li>
+<li>Prevents deployment fatigue from excessive individual change windows on clinical staff</li>
+</ul>
+<h3>Change Impact Assessment</h3>
+<p>Before any production change, document:</p>
+<ol>
+<li><strong>Affected systems</strong> → which applications, interfaces, and databases will be impacted</li>
+<li><strong>Affected workflows</strong> → which clinical/operational workflows and user groups are affected</li>
+<li><strong>Testing required</strong> → what must be validated in non-production environments</li>
+<li><strong>Rollback criteria</strong> → specific measurable conditions (error rate, downtime) that trigger rollback</li>
+<li><strong>Communication plan</strong> → who must be notified before, during, and after deployment</li>
+</ol>
+<h3>Post-Implementation Review (PIR)</h3>
+<p>Conducted after every significant change deployment:</p>
+<ul>
+<li>Were the change objectives achieved?</li>
+<li>Did unexpected issues occur? What was the root cause?</li>
+<li>Was the rollback plan activated? Why or why not?</li>
+<li>What would improve the next deployment?</li>
+</ul>
+<p>PIR findings update the risk register and change management procedures — not disciplinary action unless deliberate policy violations occurred.</p>
+<h3>Benefits Realization Timeline</h3>
+<table>
+<thead><tr><th>Checkpoint</th><th>When</th><th>What to Measure</th></tr></thead>
+<tbody>
+<tr><td><strong>Baseline</strong></td><td>Before go-live</td><td>Pre-implementation metric values (ALOS, error rates, scan rates)</td></tr>
+<tr><td><strong>30-day check</strong></td><td>1 month post</td><td>Initial adoption; help desk ticket volume; critical issue resolution</td></tr>
+<tr><td><strong>90-day review</strong></td><td>3 months post</td><td>Workflow stabilization; early efficiency gains; training compliance</td></tr>
+<tr><td><strong>6-month review</strong></td><td>6 months post</td><td>First measurable outcome improvements; initial ROI data</td></tr>
+<tr><td><strong>12-month review</strong></td><td>1 year post</td><td>Full benefits realization; actual ROI vs. projected; go/no-go on next phase</td></tr>
+</tbody>
+</table>
+<p>Benefits realization requires a <strong>pre-defined measurement plan established BEFORE go-live</strong> — defining success metrics retrospectively is not valid.</p>
+<p><em>Exam tip:</em> Benefits realization ≠ UAT. UAT validates the system works as configured. Benefits realization (months post go-live) measures whether the system delivered clinical and financial improvements that justified the investment.</p>
+<hr />
 <h2>ITIL Service Management and Security Incident Response</h2>
 <hr />
 <h3>ITIL — IT Service Management Key Processes</h3>
@@ -858,6 +898,31 @@ RBAC          → role-based access
 Least privilege → minimum necessary access
 Access review  → periodic recertification
 Termination    → immediate revocation on exit
+
+RELEASE MANAGEMENT:
+Release = packages multiple approved changes into one deployment event
+Reduces maintenance windows; manages inter-change dependencies
+Release package = list of changes + test results + rollback plan + comms plan
+
+CHANGE IMPACT ASSESSMENT (before every production change):
+1. Affected systems (apps, interfaces, databases)
+2. Affected workflows and user groups
+3. Testing required in non-production
+4. Rollback criteria (specific measurable thresholds)
+5. Communication plan (who, when, how)
+
+PIR (Post-Implementation Review):
+After every significant change: objectives met? unexpected issues? rollback needed?
+PIR → updates risk register + change procedures (NOT disciplinary unless policy violated)
+
+BENEFITS REALIZATION TIMELINE:
+Baseline    → BEFORE go-live (establish metrics)
+30-day      → adoption rate; ticket volume; critical issues
+90-day      → workflow stabilization; early efficiency gains
+6-month     → measurable outcome improvements; initial ROI
+12-month    → full ROI evaluation; go/no-go on next phase
+Pre-defined measurement plan required BEFORE go-live (not retrospective)
+Benefits realization ≠ UAT (UAT = system works; BR = delivered business value)
 
 ITIL CONCEPTS:
 Incident Mgmt → restore service FAST (not root cause); ticket logged

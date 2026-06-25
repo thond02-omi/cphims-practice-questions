@@ -314,6 +314,46 @@
 
 ---
 
+### Task A.5 Extension — Control Charts and NLP in Healthcare Analytics
+
+#### Control Charts vs. Run Charts
+
+| Feature | Run Chart | Control Chart |
+|---|---|---|
+| **What it shows** | Trend over time (simple line graph) | Trend + statistical control limits (UCL / LCL / centerline) |
+| **Detects** | Directional trends and shifts — visually | Common cause vs. special cause variation — statistically |
+| **When to use** | Quick trend monitoring; quality improvement | Determine if a change is statistically significant or just noise |
+
+**Common Cause vs. Special Cause Variation:**
+- **Common cause (normal variation)** → random variation inherent to the process; points within control limits; system is stable — do NOT overreact to individual data points
+- **Special cause (assignable)** → non-random variation from an identifiable source; signals a real change → investigate
+
+**Control chart signals indicating special cause:**
+- One point beyond the 3σ upper or lower control limit
+- Eight or more consecutive points on the same side of the centerline
+- Six consecutive points trending consistently up or down
+
+> **Exam tip:** "Did our new protocol actually improve outcomes?" → control chart (distinguishes real improvement from normal variation). Run chart = simpler visual trend. Control chart = statistical rigor with UCL/LCL.
+
+#### Natural Language Processing (NLP) in Healthcare
+
+| NLP Application | Use Case |
+|---|---|
+| **Registry population** | Auto-extract diagnoses, procedures, and medications from clinical notes to populate disease registries |
+| **Computer-Assisted Coding (CAC)** | Propose ICD-10 and CPT codes from clinical documentation; coder validates and finalizes |
+| **Adverse event detection** | Identify falls, infections, and adverse drug events from nursing notes and discharge summaries |
+| **Clinical trial eligibility screening** | Screen patient records for inclusion/exclusion criteria automatically |
+| **Quality measure abstraction** | Extract quality measure data elements from unstructured free text |
+
+**Key NLP components:**
+- **Named Entity Recognition (NER)** → identifies and classifies clinical entities (diagnoses, medications, anatomical locations)
+- **Negation detection** → distinguishes "patient has pneumonia" from "no evidence of pneumonia" or "patient denies pneumonia"
+- **Assertion detection** → determines whether a finding is current, historical, or hypothetical
+
+> **Exam tip:** NLP works on FREE TEXT (progress notes, discharge summaries). Structured fields (flowsheets, coded orders) don't require NLP. NLP quality is only as good as the documentation it reads — poorly documented notes produce unreliable extractions.
+
+---
+
 ### Task A.2 Extension — CDI, Nursing Informatics, and Clinical Registries
 
 #### Clinical Documentation Improvement (CDI)
