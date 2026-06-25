@@ -1,8 +1,61 @@
 window.THEORY_D1 = `
 <div class="theory-panel" data-domain="0"><h1>Domain 1: Healthcare and Technology Environments (25%)</h1>
 <hr />
-<h2>Exam-Style Focus</h2>
-<p>Expect questions that test whether you can recognize the healthcare setting, the stakeholders involved, the applicable law/regulation, and the technology layer that best supports care coordination. For scenario items, identify the care transition, privacy/security constraint, or interoperability need before choosing the tool or policy.</p>
+<h2>Exam-Style Focus — Domain 1 (25%)</h2>
+<p><strong>Cognitive mix: ~60% Application (AP) · ~23% Analysis (AN) · ~17% Recall (RE)</strong></p>
+<p>Domain 1 rewards recognition over deep calculation. Most questions give you a scenario and ask you to match it to an organizational type, law, HIE method, integration standard, or security control — then choose the most appropriate action. The highest-tested tasks are <strong>1.B.2 (Tech Infrastructure — 14q)</strong> and <strong>1.A.4 (Laws/Regulations — 13q)</strong>.</p>
+
+<h3>What the Exam Tests Most</h3>
+<ol>
+<li><strong>Laws and regulations (1.A.4)</strong> — Which law applies? HIPAA vs. HITECH vs. 21st Century Cures Act vs. EMTALA vs. Stark vs. AKS vs. 42 CFR Part 2. Breach notification thresholds and recipients.</li>
+<li><strong>Technology infrastructure (1.B.2)</strong> — Which integration standard? Which cloud model? Which security control? FHIR vs. HL7 v2 vs. DICOM vs. Direct Protocol.</li>
+<li><strong>Healthcare tech trends (1.A.5)</strong> — RPM, telehealth, population health, SDOH, AI/ML, information blocking exceptions.</li>
+<li><strong>HIE and interoperability (1.A.2)</strong> — Directed vs. query-based vs. consumer-mediated exchange; continuity-of-care documents.</li>
+</ol>
+
+<h3>Keywords That Signal the Answer Direction</h3>
+<ul>
+<li><strong>"FIRST" / "BEFORE signing"</strong> → check regulatory compliance, execute BAA, complete risk assessment — never go live first</li>
+<li><strong>"substance use disorder" / "SUD" / "behavioral health"</strong> → 42 CFR Part 2 (stricter than HIPAA; separate consent + segmentation required)</li>
+<li><strong>"cannot share data without specific reason"</strong> → information blocking under <em>21st Century Cures Act</em> — not HIPAA</li>
+<li><strong>"vague security concern" from vendor</strong> → not a valid information blocking exception; must be specific, documented, proportionate</li>
+<li><strong>"modern app" / "mobile" / "third-party app"</strong> → FHIR + SMART on FHIR (not HL7 v2)</li>
+<li><strong>"emergency patient / unknown records"</strong> → query-based HIE (not directed — you don't know where to send)</li>
+<li><strong>"vendor stores PHI on your behalf"</strong> → BAA required before production use</li>
+<li><strong>"≥500 individuals in a jurisdiction"</strong> → HIPAA breach: notify HHS + affected individuals + prominent local media</li>
+<li><strong>"clinician licensed in which state?"</strong> → patient's state (not clinician's home state) for telehealth</li>
+</ul>
+
+<h3>Most Common Distractor Pairs</h3>
+<table>
+<thead><tr><th>Pair</th><th>How to Distinguish</th></tr></thead>
+<tbody>
+<tr><td><strong>ACO vs. IDN</strong></td><td>ACO = shared accountability, <em>separate</em> ownership. IDN = <em>common</em> ownership of multiple facility types.</td></tr>
+<tr><td><strong>Directed vs. Query-based HIE</strong></td><td>Directed = known recipient, point-to-point. Query-based = emergency, unknown records, search a network.</td></tr>
+<tr><td><strong>HIPAA vs. 21st Century Cures Act</strong></td><td>Information blocking (refusing to share without a valid exception) = Cures Act. PHI privacy/breach = HIPAA.</td></tr>
+<tr><td><strong>Stark Law vs. AKS</strong></td><td>Stark = physician self-referral to self-owned Medicare/Medicaid services. AKS = broader — anyone paying/receiving remuneration to induce referrals.</td></tr>
+<tr><td><strong>FHIR vs. HL7 v2</strong></td><td>FHIR = RESTful API, JSON, Cures Act required, modern app integration. HL7 v2 = legacy pipe-delimited, internal ADT/orders/results.</td></tr>
+<tr><td><strong>IaaS vs. PaaS vs. SaaS</strong></td><td>SaaS = vendor manages everything (cloud EHR). IaaS = you manage OS + apps. PaaS = you manage apps only.</td></tr>
+<tr><td><strong>Encryption at rest vs. in transit</strong></td><td>At rest = protects stored data (lost laptop, stolen drive). In transit = protects data moving over network (TLS/SSL).</td></tr>
+</tbody>
+</table>
+
+<h3>How to Read a Domain 1 Scenario (4-step framework)</h3>
+<ol>
+<li><strong>Identify the care setting</strong> (hospital, FQHC, SNF, behavioral health, home health, telehealth)</li>
+<li><strong>Identify the stakeholder and their role</strong> (patient, clinician, vendor, regulator, BA)</li>
+<li><strong>Identify the constraint</strong> (privacy law, security requirement, reimbursement rule, accreditation standard)</li>
+<li><strong>Match to the narrowest applicable rule or technology</strong> — 42 CFR Part 2 beats HIPAA for SUD; FHIR beats HL7 v2 for modern APIs; Cures Act beats HIPAA for information blocking</li>
+</ol>
+
+<h3>Eliminate Immediately If You See</h3>
+<ul>
+<li>Any answer that goes live before completing compliance (BAA, risk assessment, privacy review)</li>
+<li>"Consumer-mediated exchange" for an emergency scenario where the patient is unconscious</li>
+<li>"Notify only the state attorney general" for a HIPAA breach (individuals + HHS are always required)</li>
+<li>Applying HIPAA to an information blocking / API access scenario (that's Cures Act territory)</li>
+<li>"Vague security concerns are a valid reason to block data sharing"</li>
+</ul>
 <hr />
 <h2>A. Healthcare Environment</h2>
 <hr />

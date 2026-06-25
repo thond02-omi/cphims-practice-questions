@@ -1,8 +1,75 @@
 window.THEORY_D4 = `
 <div class="theory-panel hidden" data-domain="3"><h1>Domain 4: Management and Leadership (25%)</h1>
 <hr />
-<h2>Exam-Style Focus</h2>
-<p>Expect leadership scenarios where the technically correct answer is not enough. Favor options that align technology to organizational strategy, use governance and policy, manage stakeholders ethically, document vendor or budget issues formally, and communicate recommendations in business terms.</p>
+<h2>Exam-Style Focus — Domain 4 (25%)</h2>
+<p><strong>Cognitive mix: ~53% Application (AP) · ~42% Analysis (AN) · ~5% Recall (RE)</strong></p>
+<p>Domain 4 has the <strong>highest Analysis proportion</strong> of any domain. Most questions present a leadership or management scenario and ask you to choose the option that uses governance, formal process, stakeholder engagement, and documentation — NOT unilateral immediate action. When two answers look technically correct, choose the one that follows formal process or involves committee oversight. The highest-tested task is <strong>4.20 (Organizational Change Management — 24q)</strong>, the single most-tested task in the entire CPHIMS exam.</p>
+
+<h3>What the Exam Tests Most</h3>
+<ol>
+<li><strong>Organizational change management (4.20 — 24 questions)</strong> — ADKAR model (sequential deficiency diagnosis), Kotter 8-step (specific steps), resistance management, change management success factors</li>
+<li><strong>Project and portfolio management (4.23 — 6 questions)</strong> — EVM formulas (CPI = EV÷AC, SPI = EV÷PV), project vs. program vs. portfolio, PMO role</li>
+<li><strong>Budget and financial risk (4.25 — 5 questions)</strong> — Capital vs. operating budget, ROI, TCO, NPV, payback period, chargeback vs. show-back, contingency reserve</li>
+<li><strong>Risk management (4.17 — 4 questions)</strong> — Risk register, Avoid/Mitigate/Transfer/Accept, combined strategies, vendor concentration risk</li>
+<li><strong>Stakeholder and vendor relationships (4.18, 4.24)</strong> — SLA breach process, vendor concentration risk, conflict of interest during procurement</li>
+</ol>
+
+<h3>Keywords That Signal the Answer Direction</h3>
+<ul>
+<li><strong>"nurses reverting to paper despite high test scores"</strong> → Reinforcement deficit (not Knowledge; knowledge score was high)</li>
+<li><strong>"clinicians aware but don't WANT to change"</strong> → Desire deficit — address Desire BEFORE moving to Knowledge (training)</li>
+<li><strong>"high proficiency scores but still reverting"</strong> → Ability or Reinforcement deficit (can score high but can't do it in real workflow = Ability; reverts over time = Reinforcement)</li>
+<li><strong>"why change is necessary NOW"</strong> → Kotter Step 1 (Create urgency)</li>
+<li><strong>"publicize early wins widely"</strong> → Kotter Step 6 (Generate short-term wins)</li>
+<li><strong>"change anchored in hiring, onboarding, recognition"</strong> → Kotter Step 8 (Anchor in culture)</li>
+<li><strong>"CPI &lt; 1.0"</strong> → over budget (EV &lt; AC)</li>
+<li><strong>"SPI &lt; 1.0"</strong> → behind schedule (EV &lt; PV)</li>
+<li><strong>"vendor missed SLA uptime target"</strong> → document breach formally → escalate per contract → allow remedy period → THEN consider termination</li>
+<li><strong>"one vendor for EHR + billing + scheduling + analytics"</strong> → vendor concentration risk</li>
+<li><strong>"personal device connecting to clinical network"</strong> → BYOD policy + guest VLAN segmentation</li>
+<li><strong>"conflict of interest" / "vendor gift during procurement"</strong> → decline and disclose formally</li>
+</ul>
+
+<h3>Most Common Distractor Pairs</h3>
+<table>
+<thead><tr><th>Pair</th><th>How to Distinguish</th></tr></thead>
+<tbody>
+<tr><td><strong>ADKAR Knowledge vs. Ability</strong></td><td>Knowledge = knows HOW to do it (can score 100% on a test). Ability = CAN actually do it proficiently in the real workflow. High test score + reverting to old habits = Ability or Reinforcement — not Knowledge deficit.</td></tr>
+<tr><td><strong>ADKAR Awareness vs. Desire</strong></td><td>Awareness = knows the change is happening. Desire = WANTS to participate. "Aware but resistant" or "compliant but not committed" = Desire deficit.</td></tr>
+<tr><td><strong>Kotter Step 6 vs. Step 8</strong></td><td>Step 6 = generate and publicize short-term wins DURING the change to build momentum. Step 8 = embed new behaviors permanently via hiring, onboarding, recognition (AFTER change is sustained).</td></tr>
+<tr><td><strong>Fixed-price vs. T&M contract</strong></td><td>Fixed-price = vendor bears cost overrun risk. Time-and-materials = buyer bears cost risk (open-ended total billed by actual hours).</td></tr>
+<tr><td><strong>Chargeback vs. Show-back</strong></td><td>Chargeback = IT costs directly billed to departments (real financial transfer). Show-back = costs reported for visibility WITHOUT actual billing.</td></tr>
+<tr><td><strong>Capital vs. Operating budget</strong></td><td>Capital = one-time asset purchases (hardware, major licenses, large project costs). Operating = recurring costs (SaaS subscriptions, maintenance, staff salaries).</td></tr>
+<tr><td><strong>Mitigate vs. Transfer risk</strong></td><td>Mitigate = reduce probability or impact (network segmentation). Transfer = shift financial consequence to third party (cyber insurance).</td></tr>
+</tbody>
+</table>
+
+<h3>How to Read a Domain 4 Scenario (4-step framework)</h3>
+<ol>
+<li><strong>Identify the management function</strong> (change management? risk? budget? contracts? leadership? stakeholder communication?)</li>
+<li><strong>Identify what the leader is tempted to do</strong> vs. what formal process requires (unilateral action vs. governance process)</li>
+<li><strong>For ADKAR questions:</strong> map the symptom to the deficient element, then select the matching intervention
+  <ul>
+    <li>Doesn't know it's happening → Awareness</li>
+    <li>Knows but doesn't want to → Desire</li>
+    <li>Wants but doesn't know how → Knowledge</li>
+    <li>Knows how but can't do it in practice → Ability</li>
+    <li>Can do it but reverts over time → Reinforcement</li>
+  </ul>
+</li>
+<li><strong>For financial questions:</strong> identify which metric (CPI vs. SPI vs. ROI vs. NPV vs. TCO) and apply the correct formula or definition</li>
+</ol>
+
+<h3>Eliminate Immediately If You See</h3>
+<ul>
+<li>"Terminate the vendor contract immediately" without following the formal SLA breach documentation and escalation process first</li>
+<li>"Add more training" when the scenario clearly shows a Desire deficit (awareness and desire must precede knowledge)</li>
+<li>"Proceed without board/executive approval" for a major strategic IT investment</li>
+<li>"Take unilateral immediate action" before governance process is attempted (e.g., firing a vendor without documentation)</li>
+<li>"CPI &gt; 1.0 means over budget" — it means UNDER budget (favorable)</li>
+<li>"Declare victory and stand down the team" immediately after go-live succeeds — Kotter Step 7 warns against premature declaration</li>
+<li>"Do not pay for cyber insurance since we have good security" — transferring residual risk is always appropriate alongside mitigation</li>
+</ul>
 <hr />
 <h3>Tasks 4.1–4.4 — Strategic Planning and IT Governance</h3>
 <p><strong>Contribute to organizational strategic planning · Assess the organizational environment · Forecast technical and information needs · Develop and implement an IT strategic plan</strong></p>

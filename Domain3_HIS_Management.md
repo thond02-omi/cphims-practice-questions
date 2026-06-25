@@ -2,7 +2,16 @@
 
 > **Exam weight:** ~30 scored questions out of 100 — highest-weight domain
 > **Cognitive mix:** AP and AN dominate; scenario questions requiring lifecycle phase identification
-> **Exam tip:** Always anchor your answer to the SDLC phase or lifecycle stage. For FIRST/NEXT questions, the correct answer almost always protects patient safety, preserves scope, or follows the correct process sequence.
+> **Cognitive mix: ~66% AP · ~22% AN · ~12% RE — heavily Application-driven**
+> **Highest-tested tasks: 3.C.2 (Technical Change Mgmt — 11q) · 3.A.1 (SDLC — 9q) · 3.A.2 (Project Mgmt — 5q) · 3.D.1 (Testing — 4q) · 3.B.4 (BC/DR — 3q) · 3.B.6 (Data Governance — 3q)**
+>
+> **4-step framework:**
+> 1. Identify the lifecycle phase (analysis? design? testing? implementation? maintenance? security?)
+> 2. Identify the process being tested (change management? SDLC? testing sequence? BC/DR? governance?)
+> 3. Apply the sequence rule: FIRST/NEXT answers almost always follow documented process, not skip it
+> 4. Patient safety overrides process: immediate patient harm → emergency change / immediate containment first
+>
+> **Eliminate immediately:** "Test in production" · "Skip CAB" for normal changes · "Restore from backup before eradicating malware" · "Deleting a file securely destroys PHI" · "UAT = acceptance testing" · Deploy during change freeze for non-emergency
 
 ---
 

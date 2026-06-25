@@ -2,7 +2,16 @@
 
 > **Exam weight:** ~25 scored questions out of 100
 > **Cognitive mix:** Recall (RE) · Application (AP) · Analysis (AN) — tilts toward AP/AN
-> **Exam tip:** Questions test whether you can match an organizational type, law, technology, or HIE method to a scenario. Always identify the care setting, the stakeholder, and the compliance constraint first.
+> **Cognitive mix: ~60% AP · ~23% AN · ~17% RE**
+> **Highest-tested tasks: 1.B.2 (Tech Infrastructure — 14q) · 1.A.4 (Laws/Regulations — 13q) · 1.A.5 (Tech Trends — 7q) · 1.A.2 (HIE — 7q)**
+>
+> **4-step framework for every scenario:**
+> 1. Identify the care setting (hospital, FQHC, SNF, behavioral health, telehealth)
+> 2. Identify the stakeholder and their role
+> 3. Identify the constraint (law, security, reimbursement, accreditation)
+> 4. Match to the narrowest applicable rule or technology (42 CFR Part 2 beats HIPAA for SUD; FHIR beats HL7 v2 for modern apps; Cures Act beats HIPAA for information blocking)
+>
+> **Eliminate immediately:** Any answer that goes live before completing compliance · "consumer-mediated HIE" for emergency patient · HIPAA applied to information blocking scenarios · "vague security concern" as a valid information blocking exception
 
 ---
 

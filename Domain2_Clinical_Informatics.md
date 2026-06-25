@@ -2,7 +2,16 @@
 
 > **Exam weight:** ~20 scored questions out of 100
 > **Cognitive mix:** RE · AP · AN — mix of all three; many calculation and scenario questions
-> **Exam tip:** Know every abbreviation in A.1 cold. Know which code set applies to which setting. Know all metric formulas. Know the Four Analytics levels and the Five Rights of CDS.
+> **Cognitive mix: ~53% AP · ~29% AN · ~18% RE**
+> **Highest-tested tasks: 2.5 (Analytics — 14q) · 2.6 (CDS — 12q) · 2.2 (HIT Vocab — 12q) · 2.1 (Clinical Vocab — 10q) · 2.3 (Metrics — 9q)**
+>
+> **4-step framework:**
+> 1. Identify the informatics task (coding? analytics? CDS? BCMA? metrics?)
+> 2. Identify the care setting and data type (inpatient vs. outpatient; diagnosis vs. procedure vs. lab vs. drug)
+> 3. Match to the narrowest standard (inpatient procedure → PCS not CM; drug reconciliation → RxNorm not NDC)
+> 4. For analytics: does the system score/predict only (predictive) or automatically take action (prescriptive)?
+>
+> **Eliminate immediately:** "Convert to hard-stop" when override rate is high · "Disable all alerts" for fatigue · ICD-10-PCS for outpatient · "correlation proves causation" · "discipline staff immediately" when BCMA drops
 
 ---
 

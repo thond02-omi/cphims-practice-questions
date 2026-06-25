@@ -1,8 +1,69 @@
 window.THEORY_D3 = `
 <div class="theory-panel hidden" data-domain="2"><h1>Domain 3: Healthcare Information and Systems Management (30%)</h1>
 <hr />
-<h2>Exam-Style Focus</h2>
-<p>This is the highest-weight domain. Expect scenario questions across the full lifecycle: needs analysis, design, vendor selection, implementation, testing, support, benefits realization, data governance, and privacy/security. When a stem asks for the FIRST, NEXT, or BEST action, anchor your answer to the lifecycle phase and choose the action that preserves scope, safety, compliance, and stakeholder alignment.</p>
+<h2>Exam-Style Focus — Domain 3 (30% — Highest Weight)</h2>
+<p><strong>Cognitive mix: ~66% Application (AP) · ~22% Analysis (AN) · ~12% Recall (RE)</strong></p>
+<p>Domain 3 is the highest-weight domain. Questions test every phase of the HIS lifecycle: needs analysis → design → vendor selection → implementation → testing → maintenance → change management → data governance → privacy and security. For FIRST/NEXT questions, anchor your answer to the lifecycle phase — the correct answer almost always follows the documented process rather than skipping a step. The highest-tested tasks are <strong>3.C.2 (Technical Change Management — 11q)</strong> and <strong>3.A.1 (SDLC — 9q)</strong>.</p>
+
+<h3>What the Exam Tests Most</h3>
+<ol>
+<li><strong>Technical change management (3.C.2)</strong> — Standard vs. normal vs. emergency change; CAB process; change freeze / blackout periods; rollback plan; release management; change impact assessment; PIR</li>
+<li><strong>SDLC and go-live strategies (3.A.1)</strong> — 7 SDLC phases, Waterfall vs. Agile vs. Spiral models, big bang vs. phased vs. parallel vs. pilot go-live</li>
+<li><strong>Testing methodology (3.D.1)</strong> — Unit → integration → system → UAT → acceptance (sequence matters); UAT vs. acceptance testing distinction</li>
+<li><strong>BC/DR (3.B.4)</strong> — RTO vs. RPO definitions and differences; hot/warm/cold site recovery speeds</li>
+<li><strong>Data governance (3.B.6)</strong> — Data dictionary, MDM, data steward, data lifecycle, secure media destruction (NIST 800-88)</li>
+<li><strong>Privacy and security (3.E.1–3.E.7)</strong> — CIA triad, HIPAA safeguards (admin/physical/technical), RBAC, access recertification, incident response sequence</li>
+</ol>
+
+<h3>Keywords That Signal the Answer Direction</h3>
+<ul>
+<li><strong>"EHR is down, patients waiting"</strong> → FIRST action = restore service (incident management), NOT investigate root cause</li>
+<li><strong>"pre-approved, low-risk, repeatable"</strong> → standard change (no individual CAB review required)</li>
+<li><strong>"patient safety risk, can't wait 5 days for next CAB"</strong> → emergency change (expedited authorization + retroactive formal review after deployment)</li>
+<li><strong>"blackout period" / "change freeze"</strong> → defer all non-emergency changes regardless of who requests it</li>
+<li><strong>"8 approved changes, one deployment window"</strong> → release management</li>
+<li><strong>"data flow between two or more connected systems"</strong> → integration testing (not unit, not UAT)</li>
+<li><strong>"end-users validate clinical workflows"</strong> → UAT</li>
+<li><strong>"contractual deliverables confirmed vs. SOW"</strong> → acceptance testing (separate from UAT)</li>
+<li><strong>"maximum acceptable downtime"</strong> → RTO</li>
+<li><strong>"maximum acceptable data loss"</strong> → RPO</li>
+<li><strong>"fully operational, immediate failover"</strong> → hot site</li>
+<li><strong>"delete file" / "reformat drive" to destroy PHI</strong> → NOT sufficient; NIST 800-88 cryptographic erasure or physical destruction required</li>
+<li><strong>"benefits achieved vs. projected ROI"</strong> → benefits realization (not UAT — that's months post go-live)</li>
+</ul>
+
+<h3>Most Common Distractor Pairs</h3>
+<table>
+<thead><tr><th>Pair</th><th>How to Distinguish</th></tr></thead>
+<tbody>
+<tr><td><strong>UAT vs. Acceptance testing</strong></td><td>UAT = end-users validate clinical workflows (pre-go-live quality check). Acceptance = legal confirmation that SOW contractual deliverables are met.</td></tr>
+<tr><td><strong>Incident vs. Problem (ITIL)</strong></td><td>Incident = unplanned disruption, restore service NOW. Problem = root cause of recurring incidents, eliminate permanently (happens AFTER service is restored).</td></tr>
+<tr><td><strong>RTO vs. RPO</strong></td><td>RTO = max time systems can be down before impact is unacceptable. RPO = max data loss tolerable, expressed as time (e.g., "lose up to 4 hours of data").</td></tr>
+<tr><td><strong>Hot vs. Warm vs. Cold site</strong></td><td>Hot = fully operational, fastest recovery (minutes–hours). Warm = partially equipped (hours–days). Cold = physical space only (days–weeks).</td></tr>
+<tr><td><strong>Standard vs. Emergency change</strong></td><td>Standard = pre-approved, repeatable, low-risk (no per-occurrence CAB). Emergency = urgent patient safety risk; bypasses normal timeline; requires retroactive formal review.</td></tr>
+<tr><td><strong>Waterfall vs. Agile</strong></td><td>Waterfall = fixed requirements, formal sequential phases, regulatory deadlines. Agile = evolving requirements, iterative sprints, continuous user feedback.</td></tr>
+<tr><td><strong>Benefits realization vs. UAT</strong></td><td>UAT = "does the system work as configured?" (pre-go-live). Benefits realization = "did we achieve the clinical and financial value we promised?" (months post go-live).</td></tr>
+</tbody>
+</table>
+
+<h3>How to Read a Domain 3 Scenario (4-step framework)</h3>
+<ol>
+<li><strong>Identify the lifecycle phase</strong> (analysis? design? testing? implementation? maintenance? security? governance?)</li>
+<li><strong>Identify the process being tested</strong> (change management? SDLC? testing sequence? BC/DR? data governance? incident response?)</li>
+<li><strong>Apply the sequence rule:</strong> for FIRST/NEXT questions, the correct answer almost always follows the documented process — not skips it for speed or convenience</li>
+<li><strong>Patient safety overrides process:</strong> if immediate patient harm is the scenario, emergency procedures (emergency change, immediate containment) take priority over standard timelines</li>
+</ol>
+
+<h3>Eliminate Immediately If You See</h3>
+<ul>
+<li>"Test in production" for any reason</li>
+<li>"Skip CAB review" for a normal or standard change (only emergency changes can bypass normal CAB process)</li>
+<li>"Restore from backup" before removing the malware (eradication must precede recovery)</li>
+<li>"Deleting the file is sufficient to securely destroy PHI" (NIST 800-88 required)</li>
+<li>"UAT sign-off confirms all contractual deliverables are met" (UAT ≠ acceptance testing)</li>
+<li>"Deploy immediately" during a declared change freeze for a non-emergency change</li>
+<li>"Call the root cause investigation team" as the first response when a system is down</li>
+</ul>
 <hr />
 <h2>A. Analysis</h2>
 <hr />

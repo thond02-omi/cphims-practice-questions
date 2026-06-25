@@ -1,8 +1,66 @@
 window.THEORY_D2 = `
 <div class="theory-panel hidden" data-domain="1"><h1>Domain 2: Clinical Informatics (20%)</h1>
 <hr />
-<h2>Exam-Style Focus</h2>
-<p>Expect compact clinical or operational scenarios that ask you to connect a term, metric, standard, visualization, or CDS mechanism to the safest clinical action. The exam is less about memorizing every abbreviation and more about choosing the right informatics response in the workflow.</p>
+<h2>Exam-Style Focus — Domain 2 (20%)</h2>
+<p><strong>Cognitive mix: ~53% Application (AP) · ~29% Analysis (AN) · ~18% Recall (RE)</strong></p>
+<p>Domain 2 tests clinical informatics judgment across vocabulary, metrics, analytics, and CDS. Most questions give you a clinical scenario and ask you to pick the right coding standard, metric formula, analytics level, visualization, or CDS response. The highest-tested tasks are <strong>2.5 (Data Analytics — 14q)</strong>, <strong>2.6 (CDS — 12q)</strong>, and <strong>2.2 (HIT Vocabulary — 12q)</strong>.</p>
+
+<h3>What the Exam Tests Most</h3>
+<ol>
+<li><strong>CDS mechanisms and governance (2.6)</strong> — Alert types, 5 Rights of CDS, alert fatigue governance (&gt;90% override = audit/retune/retire), hard-stop vs. soft-stop tiering</li>
+<li><strong>HIT vocabulary and coding standards (2.2)</strong> — ICD-10-CM vs. ICD-10-PCS vs. CPT vs. HCPCS vs. SNOMED CT vs. LOINC vs. RxNorm vs. NDC</li>
+<li><strong>Data analytics and visualization (2.5)</strong> — 4 analytics maturity levels, chart selection, control charts vs. run charts, NLP applications</li>
+<li><strong>Clinical metrics (2.3)</strong> — ADC, ALOS, BCMA scan rate, falls rate, CLABSI/CAUTI rate — know all formulas</li>
+<li><strong>Basic clinical vocabulary (2.1)</strong> — Medication frequency (BID/TID/PRN/STAT), routes (PO/IV/SQ/SL), common abbreviations</li>
+</ol>
+
+<h3>Keywords That Signal the Answer Direction</h3>
+<ul>
+<li><strong>"diagnoses" / "all care settings"</strong> → ICD-10-CM</li>
+<li><strong>"inpatient procedure coding"</strong> → ICD-10-PCS (inpatient ONLY — never outpatient)</li>
+<li><strong>"outpatient / physician procedure"</strong> → CPT</li>
+<li><strong>"lab test name" / "observation"</strong> → LOINC</li>
+<li><strong>"clinical concept" / "EHR problem list" / "nursing diagnosis"</strong> → SNOMED CT</li>
+<li><strong>"drug name reconciliation across systems"</strong> → RxNorm</li>
+<li><strong>"specific drug product" / "pharmacy dispensing" / "package-level"</strong> → NDC</li>
+<li><strong>"94% override rate" / "clinicians dismiss without reading"</strong> → audit + retune or retire (NOT convert to hard-stop; NOT add more alerts)</li>
+<li><strong>"automatically routes" / "triggers action" based on risk score</strong> → prescriptive analytics (risk score alone = predictive)</li>
+<li><strong>"did this change make a real statistical difference?"</strong> → control chart (not just run chart)</li>
+<li><strong>"extract diagnoses from clinical notes" / "auto-populate registry"</strong> → NLP</li>
+<li><strong>"right person" for CDS alert</strong> → clinician with authority to act (not just whoever is available)</li>
+</ul>
+
+<h3>Most Common Distractor Pairs</h3>
+<table>
+<thead><tr><th>Pair</th><th>How to Distinguish</th></tr></thead>
+<tbody>
+<tr><td><strong>SNOMED CT vs. LOINC</strong></td><td>SNOMED CT = clinical concepts and diagnoses in EHR (problem lists). LOINC = lab test and observation names.</td></tr>
+<tr><td><strong>RxNorm vs. NDC</strong></td><td>RxNorm = normalized drug name for cross-system reconciliation. NDC = product-level code (manufacturer + product + package).</td></tr>
+<tr><td><strong>Predictive vs. Prescriptive analytics</strong></td><td>Predictive = generates a risk score or forecast. Prescriptive = automatically takes an action based on that score.</td></tr>
+<tr><td><strong>Run chart vs. Control chart</strong></td><td>Run chart = simple trend line over time. Control chart adds UCL/LCL (3σ) to distinguish common cause (noise) from special cause (real signal).</td></tr>
+<tr><td><strong>Hard-stop vs. Soft-stop</strong></td><td>Hard-stop = must acknowledge before proceeding; highest severity only. Soft-stop = informational, dismissible. High override rate → move DOWN to soft-stop, not UP to hard-stop.</td></tr>
+<tr><td><strong>ICD-10-CM vs. ICD-10-PCS</strong></td><td>CM = diagnoses, all settings. PCS = inpatient procedures only. Never apply PCS in an outpatient scenario.</td></tr>
+<tr><td><strong>EMR vs. EHR vs. PHR</strong></td><td>EMR = single provider, not for sharing. EHR = designed for sharing across orgs. PHR = patient-owned.</td></tr>
+</tbody>
+</table>
+
+<h3>How to Read a Domain 2 Scenario (4-step framework)</h3>
+<ol>
+<li><strong>Identify the informatics task</strong> (coding? documentation? analytics? CDS? BCMA? metrics?)</li>
+<li><strong>Identify the care setting and data type</strong> (inpatient diagnosis vs. outpatient procedure vs. lab result vs. drug name)</li>
+<li><strong>Match to the narrowest applicable standard or tool</strong> (inpatient procedure → PCS not CM; drug reconciliation → RxNorm not NDC)</li>
+<li><strong>For analytics questions:</strong> does the system just score/predict (predictive) or does it automatically take an action (prescriptive)?</li>
+</ol>
+
+<h3>Eliminate Immediately If You See</h3>
+<ul>
+<li>"Convert to hard-stop" when override rate is high (this worsens alert fatigue — do the opposite)</li>
+<li>"Disable all alerts" as a response to alert fatigue</li>
+<li>Any coding standard applied to the wrong setting (ICD-10-PCS for outpatient; CPT for inpatient DRG grouping)</li>
+<li>"Correlation proves causation" / "the timing proves the workflow caused the change"</li>
+<li>"Immediately discipline staff" when BCMA scan rate drops (investigate usability and process first)</li>
+<li>"Pie chart" for trend-over-time questions (use run chart or control chart)</li>
+</ul>
 <hr />
 <h3>Task 2.1 — Basic Clinical Vocabulary</h3>
 <p><strong>Identify basic clinical vocabulary/terms frequently represented in healthcare informatics (e.g., dosage frequency, dosage routes, body systems)</strong></p>

@@ -2,7 +2,16 @@
 
 > **Exam weight:** ~25 scored questions out of 100
 > **Cognitive mix:** AN dominates; many leadership scenario questions where the right answer requires governance, documentation, stakeholder engagement, or data-driven decision-making before action
-> **Exam tip:** When two answers look right, choose the one that uses governance, formal process, stakeholder engagement, or evidence — NOT the one that takes unilateral immediate action.
+> **Cognitive mix: ~53% AP · ~42% AN · ~5% RE — highest Analysis proportion of all 4 domains**
+> **Highest-tested tasks: 4.20 (Change Mgmt — 24q, most-tested in whole exam) · 4.23 (Projects/Portfolio — 6q) · 4.25 (Budget — 5q) · 4.17 (Risk — 4q)**
+>
+> **4-step framework:**
+> 1. Identify the management function (change mgmt? risk? budget? contracts? leadership? stakeholder?)
+> 2. What is the leader tempted to do vs. what formal process requires?
+> 3. For ADKAR: map symptom → element → intervention (doesn't know = Awareness; doesn't want = Desire; doesn't know how = Knowledge; can't do in practice = Ability; reverts = Reinforcement)
+> 4. For financial: identify which metric (CPI/SPI/ROI/NPV/TCO) and apply the correct formula
+>
+> **Eliminate immediately:** "Terminate vendor immediately" without SLA escalation · "More training" when Desire is clearly deficient · "CPI > 1 = over budget" (it's under budget) · Unilateral action before governance process · "Declare victory" right after go-live
 
 ---
 
