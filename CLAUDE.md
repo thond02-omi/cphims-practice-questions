@@ -64,14 +64,31 @@ The inline script filters/tabs/state (`dom`, `cog`, `ansf`) all operate on DOM `
 2. Add the corresponding JSON object to `CPHIMS_Quiz/data/d{N}_cards.js` — append before the `];` closing line
 3. Question IDs follow the pattern `RW-D{N}-{NN}` (two-digit, zero-padded)
 
+### Question quality standard
+
+**Only add scenario-based questions that mirror real CPHIMS exam style.** Every question must:
+- Open with a realistic clinical or operational scenario (a hospital, a clinician, a system, a committee — doing something concrete)
+- Test application (AP) or analysis (AN) of an informatics concept, not recall of a definition
+- Have one clearly defensible correct answer and three plausible distractors
+- Map to a specific CPHIMS task area
+
+**Do not add:**
+- Definition-recall drills ("What does BID mean?", "What does STAT stand for?")
+- True/false or fill-in-the-blank style questions
+- Questions that test pure clinical knowledge with no informatics angle
+- Questions where the correct answer is obvious without any domain knowledge
+
 ## Domain exam weights
 
-| Domain | File prefix | `data-domain` | Weight | Questions |
-|---|---|---|---|---|
-| 1 — Healthcare & Technology Environments | `D1` / `d1` | `0` | 25% | 69 |
-| 2 — Clinical Informatics | `D2` / `d2` | `1` | 20% | 68 |
-| 3 — HIS Management | `D3` / `d3` | `2` | 30% | 89 |
-| 4 — Management & Leadership | `D4` / `d4` | `3` | 25% | 85 |
+| Domain | File prefix | `data-domain` | Weight | Questions | RE | AP | AN |
+|---|---|---|---|---|---|---|---|
+| 1 — Healthcare & Technology Environments | `D1` / `d1` | `0` | 25% | 69 | 11 | 42 | 16 |
+| 2 — Clinical Informatics | `D2` / `d2` | `1` | 20% | 79 | 5 | 47 | 27 |
+| 3 — HIS Management | `D3` / `d3` | `2` | 30% | 89 | 10 | 59 | 20 |
+| 4 — Management & Leadership | `D4` / `d4` | `3` | 25% | 85 | 4 | 45 | 36 |
+| **Total** | | | | **322** | **30** | **193** | **99** |
+
+> Last updated: 2026-06-28. Next question IDs: D1→RW-D1-71, D2→RW-D2-89, D3→RW-D3-91, D4→RW-D4-86.
 
 ## Updating theory/study notes
 
