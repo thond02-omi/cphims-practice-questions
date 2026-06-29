@@ -168,6 +168,8 @@ Scope · Schedule · Cost · Quality · Resource · Communication · Risk · Pro
 | **Timeliness** | Data is available when needed |
 | **Validity** | Values fall within acceptable ranges/formats |
 
+> **Exam tip:** **Timeliness** = data available when needed for the decision — a bed occupancy dashboard showing 9-hour-old data is a *timeliness* problem, not an accuracy problem (the data was accurate when captured). **Consistency** = same data element means the same thing across all systems — the classic scenario is two departments using different definitions for "discharge time." Do not confuse timeliness with accuracy; the exam distinguishes them.
+
 - **Data normalization** → standardize formats across sources before comparison (e.g., mapping "Na blood" and "serum sodium" to the same LOINC code)
 - **Master data management (MDM)** → ensures shared data entities (patient, provider, facility) are consistent across all systems
 - **Data dictionary** → defines each data element, its source, owner, valid values, and relationship to other elements
@@ -192,6 +194,8 @@ Scope · Schedule · Cost · Quality · Resource · Communication · Risk · Pro
 - **SWOT analysis** → Strengths (internal) · Weaknesses (internal) · Opportunities (external) · Threats (external)
 - **PEST / PESTLE** → Political · Economic · Social · Technological · Legal · Environmental — macro factors
 - Use a **scoring matrix** with weighted criteria to objectively compare solution options
+
+> **Balanced Scorecard exam tip:** The 4 perspectives are Financial · Customer · Internal Process · Learning & Growth. On the exam, if a scenario describes evaluating a technology investment across financial outcomes, patient/user experience, workflow efficiency, AND staff development simultaneously — that is a Balanced Scorecard. SWOT = internal + external factors. PEST = macro-environment. ROI = financial only.
 
 #### Task A.8 — Cost-Benefit Analysis
 
@@ -234,7 +238,9 @@ Scope · Schedule · Cost · Quality · Resource · Communication · Risk · Pro
 | **BAA (Business Associate Agreement)** | Required when vendor handles PHI on behalf of covered entity | HIPAA required; security obligations of BA |
 | **MSA (Master Services Agreement)** | Overarching framework; individual engagements governed by SOWs | Terms and conditions that apply across all work |
 
-> **Selection process sequence:** Needs analysis → Gap analysis → RFI → RFP → Vendor demo → Site visit → Reference check → Contract negotiation (SOW + SLA) → Sign-off
+> **BAA exam tip:** Any vendor that creates, receives, maintains, or transmits ePHI on behalf of your organization is a Business Associate and MUST sign a BAA before accessing PHI. NDA ≠ BAA — NDA protects confidential business information; BAA is the HIPAA-required instrument. SLA + SOW govern scope and performance; BAA governs PHI security obligations.
+
+> **Selection process sequence:** Needs analysis → Gap analysis → RFI → RFP → Vendor demo → Site visit → Reference check → Contract negotiation (SOW + SLA + BAA if PHI access) → Sign-off
 
 > **Exam tip:** SLA = performance standards (uptime, response time). SOW = scope and deliverables. NDA ≠ BAA — NDA protects confidential business information; BAA is required specifically for PHI access.
 
@@ -700,7 +706,7 @@ PIR findings update the risk register and change management procedures. PIR find
 - **Incident** = unplanned disruption RIGHT NOW → restore service fast (not root cause)
 - **Problem** = underlying root cause of recurring incidents → eliminate permanently
 
-> **Exam tip:** EHR is down, patients are waiting → FIRST step is to restore service (incident management), NOT investigate root cause. Root cause investigation (problem management) comes after service is restored.
+> **Exam tip:** EHR is down, patients are waiting → FIRST step is to restore service (incident management), NOT investigate root cause. Root cause investigation (problem management) comes AFTER service is restored. **Incident = restore now. Problem = prevent from recurring.** Recurring incidents with the same error pattern = escalate to problem management, not just log another ticket.
 
 ### Task D.4 Extension — Benefits Realization Timeline
 

@@ -82,13 +82,13 @@ The inline script filters/tabs/state (`dom`, `cog`, `ansf`) all operate on DOM `
 
 | Domain | File prefix | `data-domain` | Weight | Questions | RE | AP | AN |
 |---|---|---|---|---|---|---|---|
-| 1 — Healthcare & Technology Environments | `D1` / `d1` | `0` | 25% | 69 | 11 | 42 | 16 |
-| 2 — Clinical Informatics | `D2` / `d2` | `1` | 20% | 79 | 5 | 47 | 27 |
-| 3 — HIS Management | `D3` / `d3` | `2` | 30% | 89 | 10 | 59 | 20 |
-| 4 — Management & Leadership | `D4` / `d4` | `3` | 25% | 85 | 4 | 45 | 36 |
-| **Total** | | | | **322** | **30** | **193** | **99** |
+| 1 — Healthcare & Technology Environments | `D1` / `d1` | `0` | 25% | 67 | 5 | 46 | 16 |
+| 2 — Clinical Informatics | `D2` / `d2` | `1` | 20% | 78 | 5 | 46 | 27 |
+| 3 — HIS Management | `D3` / `d3` | `2` | 30% | 101 | 8 | 69 | 24 |
+| 4 — Management & Leadership | `D4` / `d4` | `3` | 25% | 92 | 2 | 51 | 39 |
+| **Total** | | | | **338** | **20** | **212** | **106** |
 
-> Last updated: 2026-06-28. Next question IDs: D1→RW-D1-71, D2→RW-D2-89, D3→RW-D3-91, D4→RW-D4-86.
+> Last updated: 2026-06-29. Next question IDs: D1→RW-D1-71, D2→RW-D2-89, D3→RW-D3-103, D4→RW-D4-94.
 
 ## Updating theory/study notes
 

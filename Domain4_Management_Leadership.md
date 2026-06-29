@@ -133,6 +133,8 @@
 
 **Policy hierarchy:** Organizational policy → Departmental procedure → Work instruction
 
+> **Exam tip:** Policy = "what we require and why" (organization-wide). Procedure = "how to do it, step by step" (department-level). Work instruction = "quick reference for this specific task." The exam may describe all three — identify which tier each document belongs to.
+
 **Review cycle:** Annually OR whenever a significant regulatory change, security incident, or operational change occurs. Do not wait for the annual review when a major CMS rule change affects data sharing requirements.
 
 ---
@@ -209,6 +211,8 @@
 
 - **Consensus building** → structured process; focus on shared goals and clinical evidence (not departmental preferences)
 - **Meeting management** → agenda distributed in advance; defined outcomes; documented action items with owners and due dates; timeboxed discussions
+
+> **Exam tip:** Collaborating is the FIRST choice when both the relationship and the outcome matter. Competing (using authority) is LAST resort — only after collaboration has failed and a decision is urgent. Avoiding and Accommodating both sacrifice the outcome.
 
 ---
 
@@ -360,6 +364,8 @@
 - **Consulted** → provide input before the decision
 - **Informed** → receive updates after the decision
 
+> **Exam tip:** The RACI answer on the exam is almost always Accountable vs Responsible. The Accountable party is whoever makes the final decision and is answerable if the outcome fails — only ONE person. The Responsible party does the actual hands-on work and can be multiple people.
+
 ---
 
 ### Task A.22 — Evaluate Staff Competency
@@ -494,6 +500,8 @@
 | **Transactional** | Manages through reward and punishment tied to defined performance expectations | Performance reviews with bonuses tied to SLA metrics; disciplinary action for policy violations |
 | **Servant leadership** | Leader serves followers first; removes obstacles; enables team success | HIT director who focuses on clearing barriers for implementation team rather than directing |
 | **Situational (Hersey-Blanchard)** | Adapts leadership style to match the development level of the follower | High-directive style for new analyst; delegating style for senior informaticist |
+
+> **Exam tip — leadership styles:** Transformational = inspire through vision and purpose (intrinsic motivation). Transactional = motivate through defined rewards and consequences. Servant = focus on removing obstacles and serving the team. Situational = change your style based on the follower's current development level.
 
 #### Situational Leadership — Development Levels and Matching Styles
 
